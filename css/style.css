@@ -1,13 +1,14 @@
 
 
-
-
-
 body {
 font-family: 'PT Sans', sans-serif;
 text-transform: uppercase; /* вроде все прописные на сайте... */
 }
-/* печему теряются стили из "body"  при переходе на страничку hotels.html ? */
+/* печему теряются стили из "body"  при переходе на страничку hotels.html?
+upd: уже не теряется - его просто надо было тоже подключить на эту страничку ))
+---
+p.s.  при добавлении форматирования верхний логотип на страничке hotels.html
+начал странно себя вести как ссылка (клиакабельна не вся картинка а лишь небольшой кусочек) */
 
 
 .main-header {
@@ -23,9 +24,9 @@ background-color: white;
 }
 
 .site-navigation {
-width: 1200px;
-height: 50px; /* указать верное значение */
-margin-top: -70px; /* указать верное значение */
+  width: 1200px;
+  height: 50px; /* указать верное значение */
+  margin-top: -70px; /* указать верное значение */
 
 }
 
@@ -67,7 +68,7 @@ margin-top: -70px; /* указать верное значение */
 }
 
 .features {
-position: relative;
+  position: relative;
 
 }
 
@@ -100,15 +101,16 @@ position: relative;
 
 .housing-meal-souvenirs {
   display: inline-block;
+
 }
 
 .visually-hidden {
-    	position: absolute !important; /* уточнить, нужен ли тут импортант */
-    	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    	clip: rect(1px, 1px, 1px, 1px);
-    	padding:0 !important;
-    	border:0 !important;
-    	height: 1px !important;
-    	width: 1px !important;
-    	overflow: hidden;
-    }
+	position: absolute !important; /* уточнить, нужен ли тут импортант */
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
