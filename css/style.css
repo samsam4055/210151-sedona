@@ -1,5 +1,15 @@
 
 
+
+
+
+body {
+font-family: 'PT Sans', sans-serif;
+text-transform: uppercase; /* вроде все прописные на сайте... */
+}
+/* печему теряются стили из "body"  при переходе на страничку hotels.html ? */
+
+
 .main-header {
 width: 1200px;
 background-color: white;
