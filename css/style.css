@@ -1,0 +1,84 @@
+
+.welcome {
+  position: relative;
+  width: 1200px;
+  height: 773px;
+  background: url("../img/sedona-welcome.jpg") no-repeat;
+
+  }
+
+
+.welcome-img {
+  display: block;
+  padding-top: 100px; /* указать верное значение */
+  margin: auto;
+}
+
+.welcome-bottom {
+  position: absolute;
+  bottom: 150px; /* указать верное значение */
+  margin: auto;
+
+}
+
+.welcome-txt {
+  position: absolute;
+  width: 1150px;  /* позже указать верное значение 1200 */
+  height: 150px; /* указать верное значение */
+  bottom: 0;
+  background-color: white;
+  
+    }
+
+
+.features {
+position: relative;
+
+}
+
+
+
+.features-blue {
+  display: block;
+  width: 1210px; /* указать верное значение */
+
+  background-color: lightblue; /* указать верное значение */
+
+}
+
+.features-gray {
+  display: block;
+    width: 1220px; /* указать верное значение */
+  background-color: lightgrey; /* указать верное значение */
+
+}
+
+.features-item {
+  display: inline-block;
+  width: 400px;  /* позже указать верное значение  */
+  vertical-align: top;
+  text-align: center;
+
+
+
+}
+
+.features-town {
+  /*  position: absolute; */
+
+}
+
+.housing-meal-souvenirs {
+  display: inline-block;
+}
+
+.visually-hidden {
+    	position: absolute !important; /* уточнить, нужен ли тут импортант */
+    	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    	clip: rect(1px, 1px, 1px, 1px);
+    	padding:0 !important;
+    	border:0 !important;
+    	height: 1px !important;
+    	width: 1px !important;
+    	overflow: hidden;
+    }

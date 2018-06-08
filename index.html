@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -22,10 +23,8 @@
     </header>
     <main class="main-container">
       <div class="welcome">
-        <div class="welcome-img" style="background-color: red">
-            <!-- Временный фон вверху для определения прозрачности-->
-          <img src="img/welcome.png" alt="Седона" width="458" height="352">
-        </div>
+        <img class="welcome-img" src="img/welcome.png" alt="Седона" width="458" height="352">
+        <img class="welcome-bottom" src="img/welcome-bottom.png" alt="Седона" width="1200" height="57">
         <div class="welcome-txt">
           <h1 class="visually-hidden">Sedona</h1>
           <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -38,19 +37,22 @@
           <span>- №1 -</span>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <!-- картинка фон городок справа-->
-        <img src="img/town.jpg" width="800" height="256" alt="Городок">
+        <!-- картинка фон городок справа -->
+        <img  class="features-town" src="img/town.jpg" width="800" height="256" alt="Городок">
       </section>
       <section class="housing-meal-souvenirs">
-        <div class="housing">
+        <div class="features-item housing">
+          <img src="img/svg/icon-1.svg" alt="Жилье">  <!--  размеры?  width="" height="" -->
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="meal">
+        <div class="features-item meal">
+            <img src="img/svg/icon-2.svg" alt="Еда">  <!--  размеры?  width="" height="" -->
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="souvenirs">
+        <div class="features-item souvenirs">
+          <img src="img/svg/icon-3.svg" alt="Сувениры">  <!--  размеры?  width="" height="" -->
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства</p>
         </div>
