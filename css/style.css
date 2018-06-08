@@ -1,8 +1,9 @@
 
 
 body {
-font-family: 'PT Sans', sans-serif;
-text-transform: uppercase; /* вроде все прописные на сайте... */
+  width: 1210px; /* если 1200 - выпадают блоков справа */
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase; /* вроде все прописные на сайте... */
 }
 /* печему теряются стили из "body"  при переходе на страничку hotels.html?
 upd: уже не теряется - его просто надо было тоже подключить на эту страничку ))
@@ -70,12 +71,14 @@ background-color: white;
 .features {
   position: relative;
 
+
 }
 
 .features-blue {
   display: block;
   width: 1210px; /* указать верное значение, если 1200 - не влазит, надо как-то обнулить... */
   background-color: lightblue; /* указать верное значение */
+  
 
 }
 
