@@ -1,12 +1,38 @@
 
+
+.main-header {
+width: 1200px;
+background-color: white;
+
+}
+
+.main-header-logo img {
+  display: block;
+  margin: auto;
+
+}
+
+.site-navigation {
+width: 1200px;
+height: 50px; /* указать верное значение */
+margin-top: -70px; /* указать верное значение */
+
+}
+
+.site-navigation li {
+  display:inline;
+
+}
+
 .welcome {
   position: relative;
   width: 1200px;
   height: 773px;
   background: url("../img/sedona-welcome.jpg") no-repeat;
+  margin-top: -66px; /* указать верное значение, почему если -70 - просвечивает вверху?*/
+  z-index: -1;  /* правильно ли так? */
 
-  }
-
+}
 
 .welcome-img {
   display: block;
@@ -23,32 +49,28 @@
 
 .welcome-txt {
   position: absolute;
-  width: 1150px;  /* позже указать верное значение 1200 */
+  width: 1150px;  /* позже указать верное значение 1200 сделано для того, что-бы видеть, что вылазит блок ниже*/
   height: 150px; /* указать верное значение */
   bottom: 0;
   background-color: white;
-  
-    }
 
+}
 
 .features {
 position: relative;
 
 }
 
-
-
 .features-blue {
   display: block;
-  width: 1210px; /* указать верное значение */
-
+  width: 1210px; /* указать верное значение, если 1200 - не влазит, надо как-то обнулить... */
   background-color: lightblue; /* указать верное значение */
 
 }
 
 .features-gray {
   display: block;
-    width: 1220px; /* указать верное значение */
+  width: 1220px; /* указать верное значение */
   background-color: lightgrey; /* указать верное значение */
 
 }
@@ -58,8 +80,6 @@ position: relative;
   width: 400px;  /* позже указать верное значение  */
   vertical-align: top;
   text-align: center;
-
-
 
 }
 
