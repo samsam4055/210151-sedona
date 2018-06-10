@@ -12,6 +12,8 @@ html {
 
 }
 
+
+
 body {
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase; /* вроде все прописные на сайте... */
@@ -21,6 +23,11 @@ body {
 /*
  при добавлении форматирования верхний логотип на страничке hotels.html
 начал странно себя вести как ссылка (клиакабельна не вся картинка а лишь небольшой кусочек) */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .main-header {
   width: 1200px;
