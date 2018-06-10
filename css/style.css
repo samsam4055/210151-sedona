@@ -57,7 +57,7 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 }
 
 .site-navigation li {
-  width: 20%;
+  width: 20%; /* разобраться почему ширина блока не 240 и откуда паддинг слева 40 в первой ли-шке */
   text-align: center;
   list-style-type: none;
   padding-top: 14px; /* размер блока 56 делить на 2 минус 14 шрифт */
@@ -66,10 +66,11 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0);
+
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: auto;
+.site-navigation li:nth-child(3) {
+  margin-left: 240px;
 
 }
 
@@ -84,7 +85,7 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 }
 
 .welcome-txt {
-  width: 1200px;  /* позже указать верное значение 1200 сделано для того, что-бы видеть, что вылазит блок ниже*/
+  width: 1200px;
   height: 150px; /* указать верное значение */
   margin-top: -150px;
   text-align: center;
@@ -113,26 +114,35 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
   display: flex;
   width: 1200px;
 
+
 }
 
-.features-blue {
+.features-blue  {
 
-  background: lightblue url("../img/town.jpg") no-repeat; /* указать верное значение */
+  background: #81b3d1 url("../img/town.jpg") no-repeat; /* указать верное значение */
   background-position: right;
+  color: rgb(255,255,255);
+
+}
+
+ .bridge {
+  background: #81b3d1 url("../img/bridge.jpg") no-repeat; /* указать верное значение */
+  background-position: left;
+  padding-left: 800px;
 
 }
 
 .features-gray {
 
-  background-color: lightgrey; /* указать верное значение */
+  background-color: #eeeeee; /* указать верное значение */
 
 }
 
 .features-item {
-  display: block;
+  height: 256px;
   width: 400px;  /* позже указать верное значение  */
-  vertical-align: top;
   text-align: center;
+
 
 }
 
@@ -143,7 +153,8 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 
 .housing-meal-souvenirs {
 display: flex;
-
+width: 1200px;
+background-color: #ffffff;
 }
 
 .visually-hidden {
