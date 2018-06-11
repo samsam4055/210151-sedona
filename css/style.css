@@ -156,14 +156,19 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
   background: #81b3d1 url("../img/town.jpg") no-repeat; /* указать верное значение */
   background-position: right;
   color: rgb(255,255,255);
+  background-size: 100% 400px;
+  background-position: center;
 
 }
 
  .bridge {
+  justify-content: flex-end;
   background: #81b3d1 url("../img/bridge.jpg") no-repeat; /* указать верное значение */
-  background-position: left;
+  background-size: 100% 400px;
 
-  padding-left: 800px;
+}
+
+.bridge > .features-item {
 
 }
 
@@ -174,9 +179,14 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 }
 
 .features-item {
-  height: 256px;
-  width: 400px;  /* позже указать верное значение  */
+  min-height: 256px;
+  width: 33.333%;  /* позже указать верное значение  */
   text-align: center;
+
+}
+
+.features-blue > .features-item {
+  background: #81b3d1;
 
 }
 
