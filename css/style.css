@@ -13,6 +13,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   background-color: grey;
@@ -67,10 +69,11 @@ a {
 
 }
 
-.site-navigation a:visited {
+.site-navigation a {
   color: rgb(0,0,0);
 
 }
+
 
 .site-navigation li {
   width: 20%; /* разобраться почему ширина блока не 240 и откуда паддинг слева 40 в первой ли-шке */
@@ -78,7 +81,6 @@ a {
   list-style-type: none;
   padding-top: 14px; /* размер блока 56 делить на 2 минус 14 шрифт */
   font-weight: bold;
-  text-align: center;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0); /* позже привести все цвета к одному формату записи */
@@ -246,6 +248,34 @@ a {
 
 }
 
+.empty {
+  display: flex;
+  justify-content: center;
+  padding-top: 260px;
+  min-height: 700px;
+  margin-top: -16px;
+  background: url("../img/sedona-welcome.jpg") no-repeat;
+
+}
+
+.map-empty {
+  display: flex;
+  justify-content: center;
+  padding-top: 260px;
+  min-height: 700px;
+  margin-top: -16px;
+  background: #589b3d url("../img/map.jpg") no-repeat;
+
+}
+
+.empty span,
+.map-empty span {
+  color: rgba(0,0,0, 0.6);
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
 .main-footer {
   display: flex;
   min-height: 120px;
@@ -263,32 +293,32 @@ a {
 
 }
 
-.empty {
-  display: flex;
-  justify-content: center;
-  padding-top: 150px;
-  min-height: 700px;
-  margin-top: -16px;
-  background: url("../img/sedona-welcome.jpg") no-repeat;
+.footer-social li {
+list-style-type: none;
 
 }
 
-.map-empty {
-  display: flex;
-  justify-content: center;
-  padding-top: 150px;
-  min-height: 700px;
-  margin-top: -16px;
-  background: #589b3d url("../img/map.jpg") no-repeat;
-
-}
-
-.empty span,
-.map-empty span {
-  color: rgba(0,0,0, 0.6);
-  font-size: 60px;
+.visit-sedona {
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(0,0,0);
   font-weight: bold;
+  text-align: center;
 
+}
+
+.footer-copyright  {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0,0,0);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-copyright span {
+  margin-right: 10px;
 }
 
 .visually-hidden {
