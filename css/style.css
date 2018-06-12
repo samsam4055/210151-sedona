@@ -24,6 +24,7 @@ body {
   min-width: 768px;
   width: 100%;
   margin: 0 auto;
+
 }
 
 .main-header {
@@ -63,10 +64,11 @@ body {
 
 a {
   text-decoration: none;
+
 }
 
 .site-navigation a:visited {
-color: rgb(0,0,0);
+  color: rgb(0,0,0);
 
 }
 
@@ -79,7 +81,6 @@ color: rgb(0,0,0);
   text-align: center;
   font-size: 14px;
   line-height: 26px;
-
   color: rgb(0,0,0); /* позже привести все цвета к одному формату записи */
 
 }
@@ -96,8 +97,14 @@ color: rgb(0,0,0);
 
 .site-navigation a:active {
   color: rgba(0,0,0, 0.3);
+
 }
-/* какой селектор для "актиыный, находимса на странице", как определить на какой стнанице мы? */
+
+.site-navigation .current-page a {  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
+  color: rgb(118,99,87);
+
+}
+
 
 .welcome-img {
   position: relative;
@@ -109,7 +116,7 @@ color: rgb(0,0,0);
   margin-top: -70px;
   z-index: -1;  /* правильно ли так? */
   background-size: 100% 57px, cover;
-  background-position: center bottom, center 1%; /* разобраться что означает этот 1% (раньше было 20%) */
+  background-position: center bottom, center 1%; /* разобраться что означает этот 1% (в примере было 20%) */
   text-align: center;
   padding-top: 89px;    /* высота "велком" ? */
   padding-bottom: 57px;
@@ -118,7 +125,6 @@ color: rgb(0,0,0);
 
 .welcome-content-img {
   text-align: center;
-
 
 }
 
@@ -155,7 +161,7 @@ color: rgb(0,0,0);
 
 }
 
-.features-blue  {
+.features-blue {
 
   background: #81b3d1 url("../img/town.jpg") no-repeat;
   background-position: right;
@@ -173,17 +179,14 @@ color: rgb(0,0,0);
 
 }
 
-
 .features-gray {
-
-  background-color: #eeeeee; /* указать верное значение */
+  background-color: #eeeeee;
 
 }
 
 .features-item {
-
   min-height: 256px;
-  width: 33.333%;  /* позже указать верное значение  */
+  width: 33.333%;
   text-align: center;
   padding-top: 20px;  /* почему не выравнивается по вертикали "вертикаль-алгин мидл" ?  */
 
@@ -238,7 +241,7 @@ color: rgb(0,0,0);
 
 .search-map img {
   width: 100%;
-  height: auto;; /* в мозиле картинка не ламается а в хроме неправильно тянется по высоте */
+  height: auto;; /* в мозиле картинка не ламается, а в хроме неправильно тянется по высоте */
   z-index: -1;
 
 }
@@ -246,7 +249,7 @@ color: rgb(0,0,0);
 .main-footer {
   display: flex;
   min-height: 120px;
-  background-color: rgba(255,255,255, 0.5); /* позже указать прозрачность 0.9 */
+  background-color: rgba(255,255,255, 0.9);
   align-items: center;
   text-align: center;
   margin-top: -120px;
@@ -257,6 +260,34 @@ color: rgb(0,0,0);
 .footer-social,
 .footer-copyright {
   width: 33.333%;
+
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  min-height: 700px;
+  margin-top: -16px;
+  background: url("../img/sedona-welcome.jpg") no-repeat;
+
+}
+
+.map-empty {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  min-height: 700px;
+  margin-top: -16px;
+  background: #589b3d url("../img/map.jpg") no-repeat;
+
+}
+
+.empty span,
+.map-empty span {
+  color: rgba(0,0,0, 0.6);
+  font-size: 60px;
+  font-weight: bold;
 
 }
 
