@@ -12,17 +12,12 @@ html {
 
 }
 
-
-
 body {
   font-family: 'PT Sans', sans-serif;
-  text-transform: uppercase; /* вроде все прописные на сайте... */
+  text-transform: uppercase;
   background-color: grey;
 
 }
-/*
- при добавлении форматирования верхний логотип на страничке hotels.html
-начал странно себя вести как ссылка (клиакабельна не вся картинка а лишь небольшой кусочек) */
 
 .container {
   max-width: 1200px;
@@ -42,12 +37,14 @@ body {
   display: flex;
   max-width: 1200px;
   width: 100%;
-  height: 56px; /* указать верное значение */
-  padding-left: 0px;
+  min-height: 56px; /* указать верное значение */
+  padding-left: 0px;  /* если явно не указать откуда-то появляется паддинг 40 пикс. */
 
 }
+
 .main-navigation {
   position: relative;
+
 }
 
 .main-header-logo {
@@ -65,11 +62,11 @@ body {
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .site-navigation a:visited {
-color: rgb(0,0,0);    /* правильно ли выбран селектор, или надо для всех ссылок?*/
+color: rgb(0,0,0);
 
 }
 
@@ -82,33 +79,42 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
   text-align: center;
   font-size: 14px;
   line-height: 26px;
+
   color: rgb(0,0,0); /* позже привести все цвета к одному формату записи */
 
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 240px;
+  margin-left: 20%;  /* правильно ли задавать маргины в % ? */
 
 }
+
+.site-navigation a:hover {
+  color: rgb(129,179,210);
+
+}
+
+.site-navigation a:active {
+  color: rgba(0,0,0, 0.3);
+}
+/* какой селектор для "актиыный, находимса на странице", как определить на какой стнанице мы? */
 
 .welcome-img {
   position: relative;
   width: 100%;
   height: 100%;
-
   background:
               url("../img/welcome-bottom.png") no-repeat,
               url("../img/sedona-welcome.jpg") no-repeat;
   margin-top: -70px;
   z-index: -1;  /* правильно ли так? */
   background-size: 100% 57px, cover;
-  background-position: center bottom, center 20%;
+  background-position: center bottom, center 1%; /* разобраться что означает этот 1% (раньше было 20%) */
   text-align: center;
-  padding-top: 100px;    /* высота "велком" */
+  padding-top: 89px;    /* высота "велком" ? */
   padding-bottom: 57px;
 
 }
-
 
 .welcome-content-img {
   text-align: center;
@@ -132,7 +138,6 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
   font-weight: bold;
   text-align: center;
 
-
 }
 
 .welcome-txt h2 {
@@ -146,14 +151,13 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 
 .features {
   display: flex;
-
-
+  align-items: center; /* почему не выравнивается по вертикали ?  */
 
 }
 
 .features-blue  {
 
-  background: #81b3d1 url("../img/town.jpg") no-repeat; /* указать верное значение */
+  background: #81b3d1 url("../img/town.jpg") no-repeat;
   background-position: right;
   color: rgb(255,255,255);
   background-size: 100% 400px;
@@ -165,12 +169,10 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
   justify-content: flex-end;
   background: #81b3d1 url("../img/bridge.jpg") no-repeat; /* указать верное значение */
   background-size: 100% 400px;
+  background-position: center;
 
 }
 
-.bridge > .features-item {
-
-}
 
 .features-gray {
 
@@ -179,9 +181,11 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 }
 
 .features-item {
+
   min-height: 256px;
   width: 33.333%;  /* позже указать верное значение  */
   text-align: center;
+  padding-top: 20px;  /* почему не выравнивается по вертикали "вертикаль-алгин мидл" ?  */
 
 }
 
@@ -200,22 +204,61 @@ color: rgb(0,0,0);    /* правильно ли выбран селектор, 
 .features-item p {
   font-size: 14px;
   line-height: 26px;
+
+}
+
+.housing-meal-souvenirs {
+  display: flex;
+  background-color: #ffffff;
+
+}
+
+.search-hotel {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 50px;      /*  выяснить и подобрать верное значение */
+  padding-bottom: 50px;  /*  выяснить и подобрать верное значение */
   text-align: center;
 
 }
 
+.request {
+  font-size: 30px;
+  line-height: 36px;
+  color: rgb(0,0,0);
+  font-weight: bold;
+  text-align: center;
 
-.housing-meal-souvenirs {
-display: flex;
+}
 
-background-color: #ffffff;
+.search-map {
+  display: flex;
+
 }
 
 .search-map img {
   width: 100%;
-  height: auto;
+  height: auto;; /* в мозиле картинка не ламается а в хроме неправильно тянется по высоте */
+  z-index: -1;
+
 }
 
+.main-footer {
+  display: flex;
+  min-height: 120px;
+  background-color: rgba(255,255,255, 0.5); /* позже указать прозрачность 0.9 */
+  align-items: center;
+  text-align: center;
+  margin-top: -120px;
+
+}
+
+.visit-sedona,
+.footer-social,
+.footer-copyright {
+  width: 33.333%;
+
+}
 
 .visually-hidden {
 	position: absolute;
