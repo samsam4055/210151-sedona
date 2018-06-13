@@ -125,7 +125,7 @@ a {
   background-size: 100% 57px, cover;
   background-position: center bottom, center 1%; /* разобраться что означает этот 1% (в примере было 20%) */
   text-align: center;
-  padding-top: 89px;    /* высота "велком" ? */
+  padding-top: 130px;    /* высота "велком" ? */
   padding-bottom: 57px;
 
 }
@@ -195,7 +195,7 @@ a {
   min-height: 256px;
   width: 33.333%;
   text-align: center;
-  padding-top: 20px;  /* почему не выравнивается по вертикали "вертикаль-алгин мидл" ?  */
+  padding-top: 50px;  /* почему не выравнивается по вертикали "вертикаль-алгин мидл" ?  */
 
 }
 
@@ -208,6 +208,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  margin-top: 0;
 
 }
 
@@ -225,23 +226,23 @@ a {
 .housing-meal-souvenirs .housing {
   background: url("../img/svg/icon-1.svg") no-repeat;
   background-position: center 60px;
-  padding-top: 160px;
+  padding-top: 162px;
   min-height: 330px;
-  
+
 }
 
 .housing-meal-souvenirs .meal {
   background: url("../img/svg/icon-2.svg") no-repeat;
-  background-position: center 60px; /* подобрать значение */
-  padding-top: 160px; /* подобрать значение */
+  background-position: center 62px; /* подобрать значение */
+  padding-top: 162px; /* подобрать значение */
   min-height: 330px;
 
 }
 
 .housing-meal-souvenirs .souvenirs {
   background: url("../img/svg/icon-3.svg") no-repeat;
-  background-position: center 60px;
-  padding-top: 160px;
+  background-position: center 56px;
+  padding-top: 162px;
   min-height: 330px;
 
 }
@@ -249,9 +250,9 @@ a {
 .search-hotel {
   width: 100%;
   background-color: #ffffff;
-  padding-top: 50px;      /*  выяснить и подобрать верное значение */
-  padding-bottom: 50px;  /*  выяснить и подобрать верное значение */
+  min-height: 290px;
   text-align: center;
+  padding-top: 57px;
 
 }
 
