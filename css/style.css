@@ -44,6 +44,7 @@ body {
   width: 100%;
   min-height: 56px; /* указать верное значение */
   padding-left: 0px;  /* если явно не указать откуда-то появляется паддинг 40 пикс. */
+  margin-top: 0px;
 
 }
 
@@ -70,6 +71,8 @@ a {
   text-decoration: none;
 
 }
+
+
 
 .site-navigation a {
   color: rgb(0,0,0);
@@ -210,13 +213,36 @@ a {
 
 .features-item p {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
 
 }
 
 .housing-meal-souvenirs {
   display: flex;
   background-color: #ffffff;
+
+}
+.housing-meal-souvenirs .housing {
+  background: url("../img/svg/icon-1.svg") no-repeat;
+  background-position: center 60px;
+  padding-top: 160px;
+  min-height: 330px;
+  
+}
+
+.housing-meal-souvenirs .meal {
+  background: url("../img/svg/icon-2.svg") no-repeat;
+  background-position: center 60px; /* подобрать значение */
+  padding-top: 160px; /* подобрать значение */
+  min-height: 330px;
+
+}
+
+.housing-meal-souvenirs .souvenirs {
+  background: url("../img/svg/icon-3.svg") no-repeat;
+  background-position: center 60px;
+  padding-top: 160px;
+  min-height: 330px;
 
 }
 
@@ -285,6 +311,10 @@ a {
   align-items: center;
   text-align: center;
   margin-top: -120px;
+
+}
+.hotels-pages {
+  margin-top: 0px; /* убираем отрицательный маргин на странице отелей */
 
 }
 
