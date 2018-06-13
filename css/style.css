@@ -44,7 +44,7 @@ body {
   width: 100%;
   min-height: 56px; /* указать верное значение */
   padding-left: 0px;  /* если явно не указать откуда-то появляется паддинг 40 пикс. */
-  margin-top: 0px;
+  margin: 0px;
 
 }
 
@@ -120,7 +120,7 @@ a {
   background:
               url("../img/welcome-bottom.png") no-repeat,
               url("../img/sedona-welcome.jpg") no-repeat;
-  margin-top: -70px;
+  margin-top: -56px;
   z-index: -1;  /* правильно ли так? */
   background-size: 100% 57px, cover;
   background-position: center bottom, center 1%; /* разобраться что означает этот 1% (в примере было 20%) */
@@ -131,6 +131,9 @@ a {
 }
 
 .welcome-content-img {
+
+  height: auto;
+
   text-align: center;
 
 }
@@ -138,8 +141,9 @@ a {
 .welcome-txt {
   width: 100%;
   background-color: #ffffff;
-  padding-top: 50px;      /*  выяснить и подобрать верное значение */
-  padding-bottom: 50px;  /*  выяснить и подобрать верное значение */
+  min-height: 216px;
+  padding-top: 42px;      /*  выяснить и подобрать верное значение */
+  padding-bottom: 42px;  /*  выяснить и подобрать верное значение */
 
 
 }
@@ -282,7 +286,6 @@ a {
   justify-content: center;
   padding-top: 260px;
   min-height: 700px;
-  margin-top: -16px;
   background: url("../img/sedona-welcome.jpg") no-repeat;
 
 }
@@ -292,8 +295,8 @@ a {
   justify-content: center;
   padding-top: 260px;
   min-height: 700px;
-  margin-top: -16px;
-  background: #589b3d url("../img/map.jpg") no-repeat;
+  background:  #81b3d1 url("../img/map.jpg") no-repeat;
+
 
 }
 
