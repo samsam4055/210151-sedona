@@ -96,6 +96,10 @@ a {
   margin-left: 20%;  /* правильно ли задавать маргины в % ? */
 
 }
+.site-navigation .current-page a {  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
+  color: rgb(118,99,87);
+
+}
 
 .site-navigation a:hover {
   color: rgb(129,179,210);
@@ -107,10 +111,7 @@ a {
 
 }
 
-.site-navigation .current-page a {  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
-  color: rgb(118,99,87);
 
-}
 
 
 .welcome-img {
