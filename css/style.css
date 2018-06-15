@@ -19,7 +19,6 @@ body {
   text-transform: uppercase;
   background-color: #f1f1f1;
 
-
 }
 
 .container {
@@ -72,13 +71,10 @@ a {
 
 }
 
-
-
 .site-navigation a {
   color: rgb(0,0,0);
 
 }
-
 
 .site-navigation li {
   width: 20%; /* разобраться почему ширина блока не 240 и откуда паддинг слева 40 в первой ли-шке */
@@ -111,9 +107,6 @@ a {
 
 }
 
-
-
-
 .welcome-img {
   position: relative;
   width: 100%;
@@ -121,20 +114,17 @@ a {
   background:
               url("../img/welcome-bottom.png") no-repeat,
               url("../img/sedona-welcome.jpg") no-repeat;
-  margin-top: -56px;
-  z-index: -1;  /* правильно ли так? */
-  background-size: 100% 57px, cover;
-  background-position: center bottom, center 1%; /* разобраться что означает этот 1% (в примере было 20%) */
+  z-index: -1;
+  background-size: 100% 57px, auto;
+  background-position: center bottom, center 20%; /* разобраться что означает эти 20% */
   text-align: center;
-  padding-top: 130px;    /* высота "велком" ? */
+  padding-top: 75px;
   padding-bottom: 57px;
 
 }
 
 .welcome-content-img {
-
   height: auto;
-
   text-align: center;
 
 }
@@ -452,4 +442,12 @@ list-style-type: none;
   background-color: #5495bd;
   color: rgba(255,255,255,0.3);
 
+}
+
+/* страничка гостинницы */
+
+.filters {
+  display: flex;
+  background: url("../img/sedona-hotels.png") no-repeat;
+  background-position: center;
 }
