@@ -118,6 +118,8 @@ a {
   min-height: 216px;
   padding-top: 42px;
   padding-bottom: 42px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .welcome-txt p {
@@ -144,17 +146,17 @@ a {
 .features-blue {
 
   background: #81b3d1 url("../img/town.jpg") no-repeat;
-  background-position: right;
+  background-position: right center;
   color: rgb(255,255,255);
-  background-size: 100% 400px;
-  background-position: center;
+  background-size: 66.66%;
+
 }
 
  .bridge {
   justify-content: flex-end;
   background: #81b3d1 url("../img/bridge.jpg") no-repeat;
-  background-size: 100% 400px;
-  background-position: center;
+  background-size: 66.66%;
+  background-position: left center;
 }
 
 .features-gray {
@@ -166,8 +168,8 @@ a {
   width: 33.333%;
   text-align: center;
   padding-top: 50px;
-  padding-left: 49px;
-  padding-right: 49px;
+  padding-left: 40px;
+  padding-right: 40px;
   }
 
 .features-blue > .features-item {
@@ -175,8 +177,8 @@ a {
 }
 
 .features-gray > .features-item {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .features-item h3 {
@@ -336,20 +338,22 @@ list-style-type: none;
 }
 
 .popup-window {
-  display: block;
-  position: relative;
-  margin-left: 316px; /* после понимания как будет работать (с ждава или без)  центрировать по-другому, так как сейчас нет резины */
+  position: absolute;
+  top: 2148px;
+  left: 50%;
+  transform: translateX(-50%);    /* на ширине меньше 768 - сдивигаетсяс дальше влео... */
   width: 568px;
-  min-height: 481px;
+  min-height: 395px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   background-color: #ffffff;
-  margin-top: -86px;
+
 }
 
+
 .search-form-btn {
-  width: 100%;
+  width: 568px;
   height: 86px;
   background-color: #756357;
   font-size: 21px;
@@ -360,6 +364,7 @@ list-style-type: none;
   text-transform: uppercase;
   border: none;
   padding: 0;
+  margin-top: 42px;
 }
 
 .search-form-btn:hover {
