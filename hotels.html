@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+  <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -28,7 +28,7 @@
 
     <section class="filters">  <!--  форма -->
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
+        <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li class="filter-option">
@@ -45,7 +45,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-of-housing">
           <legend>Тип жилья:</legend>
           <ul>
             <li class="filter-option">
@@ -62,7 +62,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="cost-per-day">
           <legend>Стоимость в сутки (Р):</legend>
           <label for="filter-price-min">От 0</label>
           <label for="filter-price-max">До 3000</label>
@@ -70,8 +70,9 @@
             <input type="range" min="0" max="4000" step="10" name="price-min" value="0" id="filter-price-min">
             <input type="range" min="0" max="4000" step="10" name="price-max" value="3000" id="filter-price-max">
           </p>
+          <button class="filter-button" type="submit">Показать</button>
         </fieldset>
-        <button class="filter-button" type="submit">Показать</button>
+
       </form>
       </section>    <!--  форма -->
 
@@ -134,6 +135,6 @@
         </a>
       </div>
     </footer>
-    <div>
+    </div>
   </body>
 </html>

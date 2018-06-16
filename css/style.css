@@ -448,6 +448,40 @@ list-style-type: none;
 
 .filters {
   display: flex;
+  width: 100%;
+  min-height: 217px;
   background: url("../img/sedona-hotels.png") no-repeat;
   background-position: center;
+
+}
+
+.filter-form {
+  display: flex;
+  width: 100%;
+  
+}
+
+.filter-form legend {
+font-size: 16px;
+line-height: 21px;
+color: rgb(255,255,255);
+font-weight: bold;
+
+}
+
+.filter-form label {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255,255,255);
+
+}
+.infrastructure,
+.type-of-housing {
+  width: 25%;
+
+}
+
+.cost-per-day {
+  width: 50%;
+
 }
