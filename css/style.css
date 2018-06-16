@@ -4,12 +4,10 @@
 *::before,
 *::after {
   box-sizing: inherit;
-
 }
 
 html {
   box-sizing: border-box;
-
 }
 
 body {
@@ -18,7 +16,6 @@ body {
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   background-color: #f1f1f1;
-
 }
 
 .container {
@@ -27,29 +24,25 @@ body {
   width: 100%;
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0,1,1,0.2);
-
 }
 
 .main-header {
   max-width: 1200px;
   width: 100%;
   background-color: white;
-
 }
 
 .site-navigation {
   display: flex;
   max-width: 1200px;
   width: 100%;
-  min-height: 56px; /* указать верное значение */
+  min-height: 56px;
   padding-left: 0px;  /* если явно не указать откуда-то появляется паддинг 40 пикс. */
   margin: 0px;
-
 }
 
 .main-navigation {
   position: relative;
-
 }
 
 .main-header-logo {
@@ -57,27 +50,23 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .main-header-logo img {
   display: block;
   margin: auto;
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 .site-navigation a {
   color: rgb(0,0,0);
-
 }
 
 .site-navigation li {
-  width: 20%; /* разобраться почему ширина блока не 240 и откуда паддинг слева 40 в первой ли-шке */
+  width: 20%;
   text-align: center;
   list-style-type: none;
   padding-top: 14px; /* размер блока 56 делить на 2 минус 14 шрифт */
@@ -85,26 +74,22 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0); /* позже привести все цвета к одному формату записи */
-
 }
 
 .site-navigation li:nth-child(3) {
   margin-left: 20%;  /* правильно ли задавать маргины в % ? */
-
 }
+
 .site-navigation .current-page a {  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
   color: rgb(118,99,87);
-
 }
 
 .site-navigation a:hover {
   color: rgb(129,179,210);
-
 }
 
 .site-navigation a:active {
   color: rgba(0,0,0, 0.3);
-
 }
 
 .welcome-img {
@@ -120,23 +105,19 @@ a {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 57px;
-
 }
 
 .welcome-content-img {
   height: auto;
   text-align: center;
-
 }
 
 .welcome-txt {
   width: 100%;
   background-color: #ffffff;
   min-height: 216px;
-  padding-top: 42px;      /*  выяснить и подобрать верное значение */
-  padding-bottom: 42px;  /*  выяснить и подобрать верное значение */
-
-
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .welcome-txt p {
@@ -145,7 +126,6 @@ a {
   color: rgb(0,0,0);
   font-weight: bold;
   text-align: center;
-
 }
 
 .welcome-txt h2 {
@@ -154,13 +134,11 @@ a {
   color: rgb(51,51,51);
   text-align: center;
   font-weight: normal;
-
 }
 
 .features {
   display: flex;
-  align-items: center; /* почему не выравнивается по вертикали ?  */
-
+  align-items: center;
 }
 
 .features-blue {
@@ -170,33 +148,35 @@ a {
   color: rgb(255,255,255);
   background-size: 100% 400px;
   background-position: center;
-
 }
 
  .bridge {
   justify-content: flex-end;
-  background: #81b3d1 url("../img/bridge.jpg") no-repeat; /* указать верное значение */
+  background: #81b3d1 url("../img/bridge.jpg") no-repeat;
   background-size: 100% 400px;
   background-position: center;
-
 }
 
 .features-gray {
   background-color: #eeeeee;
-
 }
 
 .features-item {
   min-height: 256px;
   width: 33.333%;
   text-align: center;
-  padding-top: 50px;  /* почему не выравнивается по вертикали "вертикаль-алгин мидл" ?  */
-
-}
+  padding-top: 50px;
+  padding-left: 49px;
+  padding-right: 49px;
+  }
 
 .features-blue > .features-item {
   background: #81b3d1;
+}
 
+.features-gray > .features-item {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .features-item h3 {
@@ -204,7 +184,6 @@ a {
   line-height: 21px;
   font-weight: bold;
   margin-top: 0;
-
 }
 
 .features-item p {
@@ -216,14 +195,13 @@ a {
 .housing-meal-souvenirs {
   display: flex;
   background-color: #ffffff;
-
 }
+
 .housing-meal-souvenirs .housing {
   background: url("../img/svg/icon-1.svg") no-repeat;
   background-position: center 60px;
   padding-top: 162px;
   min-height: 330px;
-
 }
 
 .housing-meal-souvenirs .meal {
@@ -231,7 +209,6 @@ a {
   background-position: center 62px; /* подобрать значение */
   padding-top: 162px; /* подобрать значение */
   min-height: 330px;
-
 }
 
 .housing-meal-souvenirs .souvenirs {
@@ -239,7 +216,6 @@ a {
   background-position: center 56px;
   padding-top: 162px;
   min-height: 330px;
-
 }
 
 .search-hotel {
@@ -248,7 +224,6 @@ a {
   min-height: 290px;
   text-align: center;
   padding-top: 57px;
-
 }
 
 .request {
@@ -257,19 +232,16 @@ a {
   color: rgb(0,0,0);
   font-weight: bold;
   text-align: center;
-
 }
 
 .search-map {
   display: flex;
-
 }
 
 .search-map img {
   width: 100%;
   height: auto;; /* в мозиле картинка не ламается, а в хроме неправильно тянется по высоте */
   z-index: -1;
-
 }
 
 .empty {
@@ -278,7 +250,6 @@ a {
   padding-top: 260px;
   min-height: 700px;
   background: url("../img/sedona-welcome.jpg") no-repeat;
-
 }
 
 .map-empty {
@@ -287,8 +258,6 @@ a {
   padding-top: 260px;
   min-height: 700px;
   background:  #81b3d1 url("../img/map.jpg") no-repeat;
-
-
 }
 
 .empty span,
@@ -296,7 +265,6 @@ a {
   color: rgba(0,0,0, 0.6);
   font-size: 60px;
   font-weight: bold;
-
 }
 
 .main-footer {
@@ -306,23 +274,20 @@ a {
   align-items: center;
   text-align: center;
   margin-top: -120px;
-
 }
-.hotels-pages {
-  margin-top: 0px; /* убираем отрицательный маргин на странице отелей */
 
+.hotels-pages {
+  margin-top: 0px; /* убираем отрицательный маргин футера на странице отелей */
 }
 
 .visit-sedona,
 .footer-social,
 .footer-copyright {
   width: 33.333%;
-
 }
 
 .footer-social li {
 list-style-type: none;
-
 }
 
 .visit-sedona {
@@ -331,7 +296,6 @@ list-style-type: none;
   color: rgb(0,0,0);
   font-weight: bold;
   text-align: center;
-
 }
 
 .footer-copyright  {
@@ -341,29 +305,23 @@ list-style-type: none;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0);
-
-
 }
 
 .footer-copyright span {
   margin-right: 10px;
-
 }
 
 .footer-copyright svg {
   width: 115px;
   height: 41px;
-
 }
 
  .academy:hover path {
    fill: #81b3d1;
-
 }
 
    .academy:active path {
      fill: #bdbbbb;
-
 }
 
 .visually-hidden {
@@ -375,7 +333,6 @@ list-style-type: none;
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-
 }
 
 .popup-window {
@@ -389,7 +346,6 @@ list-style-type: none;
   font-weight: bold;
   background-color: #ffffff;
   margin-top: -86px;
-
 }
 
 .search-form-btn {
@@ -404,18 +360,15 @@ list-style-type: none;
   text-transform: uppercase;
   border: none;
   padding: 0;
-
 }
 
 .search-form-btn:hover {
   background-color: #604e43;
-
 }
 
 .search-form-btn:active {
   background-color: #503d32;
   color: rgba(255,255,255,0.3);
-
 }
 
 .search-btn {
@@ -431,17 +384,14 @@ list-style-type: none;
   border: none;
   padding: 0;
   margin-left: 55px;
-
 }
 
 .search-btn:hover {
   background-color: #669dc0;
-
 }
 .search-btn:active {
   background-color: #5495bd;
   color: rgba(255,255,255,0.3);
-
 }
 
 /* страничка гостинницы */
@@ -450,15 +400,19 @@ list-style-type: none;
   display: flex;
   width: 100%;
   min-height: 217px;
-  background: url("../img/sedona-hotels.png") no-repeat;
+  background: #684b47 url("../img/sedona-hotels.jpg") no-repeat;
   background-position: center;
-
 }
 
 .filter-form {
   display: flex;
   width: 100%;
-  
+  list-style-type: none;
+}
+
+.filters li,
+.catalog li {
+  list-style-type: none;
 }
 
 .filter-form legend {
@@ -466,22 +420,35 @@ font-size: 16px;
 line-height: 21px;
 color: rgb(255,255,255);
 font-weight: bold;
-
 }
 
 .filter-form label {
   font-size: 14px;
   line-height: 21px;
   color: rgb(255,255,255);
-
 }
+
 .infrastructure,
 .type-of-housing {
   width: 25%;
-
 }
 
 .cost-per-day {
   width: 50%;
+}
 
+.filter-button {
+  background: none;
+  border: 2px solid #ffffff;
+  width: 133px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+}
+
+.filter-button:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
 }
