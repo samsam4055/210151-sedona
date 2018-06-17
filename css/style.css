@@ -67,17 +67,17 @@ a {
 
 .site-navigation li {
   width: 20%;
-  text-align: center;
   list-style-type: none;
   padding-top: 14px; /* размер блока 56 делить на 2 минус 14 шрифт */
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0); /* позже привести все цвета к одному формату записи */
+  text-align: center;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 20%;  /* правильно ли задавать маргины в % ? */
+  margin-left: 20%;
 }
 
 .site-navigation .current-page a {  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
@@ -419,6 +419,8 @@ list-style-type: none;
   min-height: 217px;
   background: #684b47 url("../img/sedona-hotels.jpg") no-repeat;
   background-position: center;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .filter-form {
@@ -427,8 +429,7 @@ list-style-type: none;
   list-style-type: none;
 }
 
-.filters li,
-.catalog li {
+.filters li {
   list-style-type: none;
 }
 
@@ -468,4 +469,31 @@ font-weight: bold;
 .filter-button:hover {
   background-color: rgb(255,255,255);
   color: rgb(0,0,0);
+}
+
+/* секция каталог */
+.catalog {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.catalog li {
+  list-style-type: none;
+}
+
+.catalog-header  {
+  display: flex;
+}
+
+.catalog-header ul {
+  display: inline-flex;
+  padding-left: 50px
+}
+
+.catalog-header li {
+  padding-right: 33px;
+}
+
+.catalog-header li:nth-child(1) {
+  padding-right: 40px;
 }
