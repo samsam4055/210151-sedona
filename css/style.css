@@ -339,19 +339,29 @@ list-style-type: none;
 	overflow: hidden;
 }
 
-.popup-window {
+.positioning-window {
+  min-width: 768px;
   position: absolute;
   top: 2148px;
   left: 50%;
   transform: translateX(-50%);    /* на ширине меньше 768 - сдивигаетсяс дальше влео... */
+}
+
+#popup-window {
+  display: none;
+}
+
+.popup-window {
   width: 568px;
   min-height: 395px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   background-color: #ffffff;
-
+  display: block;
+  margin: auto;
 }
+
 
 
 .search-form-btn {

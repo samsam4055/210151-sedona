@@ -34,7 +34,6 @@
           <p>Седона — небольшой городок в Аризоне, заслуживающий&nbsp;большего!</p>
           <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
         </div>
-
       <section class="features features-blue">
         <div class="features-item">
           <h3>Настоящий городок</h3>
@@ -60,7 +59,7 @@
             <div class="features-item">
           <h3>Там есть мост дьявола</h3>
           <p>— №2 —</p>
-          <p>Да, по нему можно пройти!&nbsp;Если&nbsp;конечно вы&nbsp;осмелитесь</p> <!-- ошибка в макете? "конечно" не выделено запятыми -->
+          <p>Да, по нему можно пройти!&nbsp;Если&nbsp;конечно вы&nbsp;осмелитесь</p>
         </div>
       </section>
       <section class="features features-gray">
@@ -77,18 +76,18 @@
         <div class="features-item">
           <h3>Мало туристов</h3>
           <p>— №5 —</p>
-          <p>Большинство едет в Гранд&nbsp;Каньон&nbsp;и толпится&nbsp;там</p>  <!-- можно ли разбить "бр"-ами немного по-другому (не как в макете)
-                                                                        - при резиновости не будет выпадения в 3 строчеки -->
+          <p>Большинство едет в Гранд&nbsp;Каньон&nbsp;и толпится&nbsp;там</p>
         </div>
       </section>
       <section class="search">
         <div class="search-hotel">
           <span class="request">Заинтересовались?</span>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="search-form-btn" type="button">Поиск гостиницы в Седоне</button>
+          <button class="search-form-btn" type="button" onclick="javascript:showElement('popup-window')">Поиск гостиницы в Седоне</button>
         </div>
         <!-- Тут будет блок поиска -->
-      <div class="popup-window ">
+        <div class="positioning-window">
+      <div id="popup-window" class="popup-window">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 
           <div class="search-item">
@@ -116,6 +115,7 @@
           <button class="search-btn" type="submit">Найти</button>
         </form>
       </div>
+    </div>
           <!--конец БП -->
         <div class="search-map">
           <img src="img/map.jpg" width="1200" height="593" alt="Карта">
@@ -139,5 +139,15 @@
       </div>
     </footer>
   </div>
-  </body>
+  <script type="text/javascript">
+    function showElement(layer){
+    var myLayer = document.getElementById(layer);
+    if(myLayer.style.display=="block"){
+    myLayer.style.display="none";
+    } else {
+    myLayer.style.display="block";
+   }
+  }
+</script>
+</body>
 </html>
