@@ -186,13 +186,15 @@ a {
   line-height: 21px;
   font-weight: bold;
   margin-top: 0;
+  padding-left: 68px;
+  padding-right: 68px;
 }
 
 .features-item p {
   font-size: 14px;
   line-height: 21px;
-
 }
+
 
 .housing-meal-souvenirs {
   display: flex;
@@ -340,11 +342,7 @@ list-style-type: none;
 }
 
 .positioning-window {
-  min-width: 768px;
-  position: absolute;
-  top: 2148px;
-  left: 50%;
-  transform: translateX(-50%);    /* на ширине меньше 768 - сдивигаетсяс дальше влео... */
+  position: relative;
 }
 
 #popup-window {
@@ -352,6 +350,10 @@ list-style-type: none;
 }
 
 .popup-window {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  transform: translateX(-50%);
   width: 568px;
   min-height: 395px;
   font-size: 14px;
@@ -361,8 +363,6 @@ list-style-type: none;
   display: block;
   margin: auto;
 }
-
-
 
 .search-form-btn {
   width: 568px;
