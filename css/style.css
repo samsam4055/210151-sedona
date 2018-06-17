@@ -475,6 +475,13 @@ font-weight: bold;
 .catalog {
   padding-left: 6%;
   padding-right: 6%;
+  background-color: rgb(255,255,255);
+}
+
+.catalog h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .catalog li {
@@ -483,17 +490,44 @@ font-weight: bold;
 
 .catalog-header  {
   display: flex;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .catalog-header ul {
   display: inline-flex;
-  padding-left: 50px
+  padding-left: 50px;
 }
 
 .catalog-header li {
   padding-right: 33px;
+  align-self: center;
 }
 
 .catalog-header li:nth-child(1) {
   padding-right: 40px;
+}
+
+.catalog-header a:hover {
+  color: rgb(129,179,210);
+}
+
+.catalog-header a:active {
+  color: rgb(0,0,0);
+}
+
+.catalog-header a {
+  color: rgba(0,0,0,0.3);
+}
+
+.current-sorting a {
+  color: rgb(129,179,210);
+}
+
+.catalog-item {
+  display: flex;
+}
+
+.catalog-description {
+  display: flex;
 }
