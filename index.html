@@ -1,17 +1,18 @@
-
-
 <!DOCTYPE html>
+
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-   <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -30,10 +31,10 @@
         <h1 class="visually-hidden">Sedona</h1>
         <img class="welcome-content-img" src="img/welcome.png" alt="Седона" width="458" height="352">
       </div>
-        <div class="welcome-txt">
-          <p>Седона — небольшой городок в Аризоне, заслуживающий&nbsp;большего!</p>
-          <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-        </div>
+      <div class="welcome-txt">
+        <p>Седона — небольшой городок в Аризоне, заслуживающий&nbsp;большего!</p>
+        <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+      </div>
       <section class="features features-blue">
         <div class="features-item">
           <h3>Настоящий городок</h3>
@@ -56,7 +57,7 @@
         </div>
       </section>
       <section class="features features-blue bridge">
-            <div class="features-item">
+        <div class="features-item">
           <h3>Там&nbsp;есть мост&nbsp;дьявола</h3>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти!&nbsp;Если&nbsp;конечно вы&nbsp;осмелитесь</p>
@@ -87,36 +88,36 @@
         </div>
         <!-- Тут будет блок поиска -->
         <div class="positioning-window">
-      <div id="popup-window" class="popup-window">
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <div id="popup-window" class="popup-window">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 
-          <div class="search-item">
-            <label for="search-date-arrival">Дата заезда:</label>
-            <input id="search-date-arrival" type="date" name="date-arrival" placeholder="24 апреля 2017">
-            <!-- <button class="search-calendar-btn" type="button">Календарь</button> -->
+              <div class="search-item">
+                <label for="search-date-arrival">Дата заезда:</label>
+                <input id="search-date-arrival" type="date" name="date-arrival" placeholder="24 апреля 2017">
+                <!-- <button class="search-calendar-btn" type="button">Календарь</button> -->
+              </div>
+              <div class="search-item">
+                <label for="search-date-departure">Дата выезда:</label>
+                <input id="search-date-departure" type="date" name="date-departure" placeholder="7 июля 2017">
+                <!-- <button class="search-calendar-btn" type="button">Календарь</button> -->
+              </div>
+              <div class="search-item">
+                <label for="search-quantity-adults">Взрослые:</label>
+                <!-- <button class="search-quantity-btn" type="button">-</button> -->
+                <input id="search-quantity-adults" type="number" name="quantity-adults" value="2">
+                <!-- <button class="search-quantity-btn" type="button">+</button> -->
+              </div>
+              <div class="search-item">
+                <label for="search-quantity-children">Дети:</label>
+                <!-- <button class="search-quantity-btn" type="button">-</button> -->
+                <input id="search-quantity-children" type="number" name="quantity-children" value="0">
+                <!-- <button class="search-quantity-btn" type="button">+</button> -->
+              </div>
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
           </div>
-          <div class="search-item">
-            <label for="search-date-departure">Дата выезда:</label>
-            <input id="search-date-departure" type="date" name="date-departure" placeholder="7 июля 2017">
-            <!-- <button class="search-calendar-btn" type="button">Календарь</button> -->
-          </div>
-          <div class="search-item">
-            <label for="search-quantity-adults">Взрослые:</label>
-            <!-- <button class="search-quantity-btn" type="button">-</button> -->
-            <input id="search-quantity-adults" type="number" name="quantity-adults" value="2">
-            <!-- <button class="search-quantity-btn" type="button">+</button> -->
-          </div>
-          <div class="search-item">
-            <label for="search-quantity-children">Дети:</label>
-            <!-- <button class="search-quantity-btn" type="button">-</button> -->
-            <input id="search-quantity-children" type="number" name="quantity-children" value="0">
-            <!-- <button class="search-quantity-btn" type="button">+</button> -->
-          </div>
-          <button class="search-btn" type="submit">Найти</button>
-        </form>
-      </div>
-    </div>
-          <!--конец БП -->
+        </div>
+        <!--конец БП -->
         <div class="search-map">
 
           <img src="img/map.jpg" width="1200" height="593" alt="Карта">
@@ -141,14 +142,15 @@
     </footer>
   </div>
   <script type="text/javascript">
-    function showElement(layer){
-    var myLayer = document.getElementById(layer);
-    if(myLayer.style.display=="block"){
-    myLayer.style.display="none";
-    } else {
-    myLayer.style.display="block";
-   }
-  }
-</script>
+    function showElement(layer) {
+      var myLayer = document.getElementById(layer);
+      if (myLayer.style.display == "block") {
+        myLayer.style.display = "none";
+      } else {
+        myLayer.style.display = "block";
+      }
+    }
+  </script>
 </body>
+
 </html>

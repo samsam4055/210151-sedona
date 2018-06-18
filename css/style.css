@@ -1,8 +1,4 @@
-
-
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -23,7 +19,7 @@ body {
   min-width: 768px;
   width: 100%;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px rgba(0,1,1,0.2);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
@@ -37,7 +33,8 @@ body {
   max-width: 1200px;
   width: 100%;
   min-height: 56px;
-  padding-left: 0px;  /* если явно не указать откуда-то появляется паддинг 40 пикс. */
+  padding-left: 0px;
+  /* если явно не указать откуда-то появляется паддинг 40 пикс. */
   margin: 0px;
 }
 
@@ -62,17 +59,19 @@ a {
 }
 
 .site-navigation a {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
 }
 
 .site-navigation li {
   width: 20%;
   list-style-type: none;
-  padding-top: 14px; /* размер блока 56 делить на 2 минус 14 шрифт */
+  padding-top: 14px;
+  /* размер блока 56 делить на 2 минус 14 шрифт */
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: rgb(0,0,0); /* позже привести все цвета к одному формату записи */
+  color: rgb(0, 0, 0);
+  /* позже привести все цвета к одному формату записи */
   text-align: center;
 }
 
@@ -80,28 +79,28 @@ a {
   margin-left: 20%;
 }
 
-.site-navigation .current-page a {  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
-  color: rgb(118,99,87);
+.site-navigation .current-page a {
+  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
+  color: rgb(118, 99, 87);
 }
 
 .site-navigation a:hover {
-  color: rgb(129,179,210);
+  color: rgb(129, 179, 210);
 }
 
 .site-navigation a:active {
-  color: rgba(0,0,0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .welcome-img {
   position: relative;
   width: 100%;
   height: 100%;
-  background:
-              url("../img/welcome-bottom.png") no-repeat,
-              url("../img/sedona-welcome.jpg") no-repeat;
+  background: url("../img/welcome-bottom.png") no-repeat, url("../img/sedona-welcome.jpg") no-repeat;
   z-index: -1;
   background-size: 100% 57px, auto;
-  background-position: center bottom, center 20%; /* разобраться что означает эти 20% */
+  background-position: center bottom, center 20%;
+  /* разобраться что означает эти 20% */
   text-align: center;
   padding-top: 75px;
   padding-bottom: 57px;
@@ -125,7 +124,7 @@ a {
 .welcome-txt p {
   font-size: 21px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
 }
@@ -133,7 +132,7 @@ a {
 .welcome-txt h2 {
   font-size: 14px;
   line-height: 26px;
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   text-align: center;
   font-weight: normal;
 }
@@ -144,15 +143,13 @@ a {
 }
 
 .features-blue {
-
   background: #81b3d1 url("../img/town.jpg") no-repeat;
   background-position: right center;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   background-size: 66.66%;
-
 }
 
- .bridge {
+.bridge {
   justify-content: flex-end;
   background: #81b3d1 url("../img/bridge.jpg") no-repeat;
   background-size: 66.66%;
@@ -170,13 +167,13 @@ a {
   padding-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
-  }
+}
 
-.features-blue > .features-item {
+.features-blue>.features-item {
   background: #81b3d1;
 }
 
-.features-gray > .features-item {
+.features-gray>.features-item {
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -195,7 +192,6 @@ a {
   line-height: 21px;
 }
 
-
 .housing-meal-souvenirs {
   display: flex;
   background-color: #ffffff;
@@ -210,8 +206,10 @@ a {
 
 .housing-meal-souvenirs .meal {
   background: url("../img/svg/icon-2.svg") no-repeat;
-  background-position: center 62px; /* подобрать значение */
-  padding-top: 162px; /* подобрать значение */
+  background-position: center 62px;
+  /* подобрать значение */
+  padding-top: 162px;
+  /* подобрать значение */
   min-height: 330px;
 }
 
@@ -233,7 +231,7 @@ a {
 .request {
   font-size: 30px;
   line-height: 36px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
 }
@@ -261,12 +259,11 @@ a {
   justify-content: center;
   padding-top: 260px;
   min-height: 700px;
-  background:  #81b3d1 url("../img/map.jpg") no-repeat;
+  background: #81b3d1 url("../img/map.jpg") no-repeat;
 }
 
-.empty span,
-.map-empty span {
-  color: rgba(0,0,0, 0.6);
+.empty span, .map-empty span {
+  color: rgba(0, 0, 0, 0.6);
   font-size: 60px;
   font-weight: bold;
 }
@@ -274,7 +271,7 @@ a {
 .main-footer {
   display: flex;
   min-height: 120px;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
   text-align: center;
   margin-top: -120px;
@@ -282,34 +279,33 @@ a {
 }
 
 .hotels-pages {
-  margin-top: 0px; /* убираем отрицательный маргин футера на странице отелей */
+  margin-top: 0px;
+  /* убираем отрицательный маргин футера на странице отелей */
 }
 
-.visit-sedona,
-.footer-social,
-.footer-copyright {
+.visit-sedona, .footer-social, .footer-copyright {
   width: 33.333%;
 }
 
 .footer-social li {
-list-style-type: none;
+  list-style-type: none;
 }
 
 .visit-sedona {
   font-size: 21px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
 }
 
-.footer-copyright  {
+.footer-copyright {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
 }
 
 .footer-copyright span {
@@ -321,23 +317,24 @@ list-style-type: none;
   height: 41px;
 }
 
- .academy:hover path {
-   fill: #81b3d1;
+.academy:hover path {
+  fill: #81b3d1;
 }
 
 .academy:active path {
-    fill: #bdbbbb;
+  fill: #bdbbbb;
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .positioning-window {
@@ -351,7 +348,7 @@ list-style-type: none;
 .popup-window {
   position: absolute;
   top: 0px;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   width: 568px;
   min-height: 395px;
@@ -369,7 +366,7 @@ list-style-type: none;
   background-color: #756357;
   font-size: 21px;
   line-height: 26px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -384,16 +381,16 @@ list-style-type: none;
 
 .search-form-btn:active {
   background-color: #503d32;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-btn {
   width: 458px;
-  height:58px;
+  height: 58px;
   background-color: #81b3d1;
   font-size: 21px;
   line-height: 26px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -405,9 +402,10 @@ list-style-type: none;
 .search-btn:hover {
   background-color: #669dc0;
 }
+
 .search-btn:active {
   background-color: #5495bd;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* страничка гостинницы */
@@ -433,20 +431,19 @@ list-style-type: none;
 }
 
 .filter-form legend {
-font-size: 16px;
-line-height: 21px;
-color: rgb(255,255,255);
-font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .filter-form label {
   font-size: 14px;
   line-height: 21px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
-.infrastructure,
-.type-of-housing {
+.infrastructure, .type-of-housing {
   width: 25%;
 }
 
@@ -461,20 +458,19 @@ font-weight: bold;
   height: 32px;
   font-size: 14px;
   line-height: 21px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
 .filter-button:hover {
-  background-color: rgb(255,255,255);
-  color: rgb(0,0,0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 /* секция каталог */
+
 .catalog {
-  padding-left: 6%;
-  padding-right: 6%;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
 }
 
 .catalog-header h3 {
@@ -487,16 +483,17 @@ font-weight: bold;
   list-style-type: none;
 }
 
-.catalog-header  {
+.catalog-header {
   display: flex;
   font-size: 12px;
   line-height: 18px;
+  padding-left: 6%;
+  padding-right: 6%;
   border-bottom: solid #e5e5e5 1px;
 }
 
 .catalog-header ul {
   display: inline-flex;
-
 }
 
 .catalog-header li {
@@ -511,19 +508,19 @@ font-weight: bold;
 }
 
 .catalog-header a:hover {
-  color: rgb(129,179,210);
+  color: rgb(129, 179, 210);
 }
 
 .catalog-header a:active {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
 }
 
 .catalog-header a {
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .current-sorting a {
-  color: rgb(129,179,210);
+  color: rgb(129, 179, 210);
 }
 
 .catalog-items {
@@ -536,6 +533,8 @@ font-weight: bold;
   align-items: center;
   min-height: 150px;
   border-bottom: solid #e5e5e5 1px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .rating {
@@ -543,35 +542,64 @@ font-weight: bold;
   background-color: #f1f1f1;
   font-size: 14px;
   line-height: 21px;
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
   text-align: center;
   padding: 5px 13px 6px 16px;
 }
 
 .catalog-description {
   padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-description h3 {
+  width: 100%;
   font-size: 21px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
 
-.catalog-description p {
+.catalog-description h3 a {
+  /* сложный селектор более 2-х, ошибка? */
+  color: rgb(0, 0, 0);
+}
+
+.catalog-description h3 a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.catalog-description h3 a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.description-block {
+  display: flex;
+  flex-direction: column;
+  width: 116px;
+}
+
+.catalog-description span {
   font-size: 14px;
   line-height: 21px;
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
+  margin-bottom: 12px;
 }
 
 .more-info {
   font-size: 14px;
   line-height: 21px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: #81b3d2;
-  padding: 8px 16px;
+  width: 110px;
+  height: 27px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .more-info:hover {
@@ -580,16 +608,20 @@ font-weight: bold;
 
 .more-info:active {
   background-color: #5495bd;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .book-it {
   font-size: 14px;
   line-height: 21px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: #756357;
-  padding: 8px 16px;
+  width: 142px;
+  height: 27px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .book-it:hover {
@@ -598,5 +630,5 @@ font-weight: bold;
 
 .book-it:active {
   background-color: #503d32;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
