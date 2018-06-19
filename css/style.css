@@ -290,6 +290,36 @@ a {
 .footer-social li {
   list-style-type: none;
 }
+.footer-social ul {
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.social-button:hover {
+  background-color: #669dc0;
+}
+
+.social-button:active path,
+.social-button:active {
+  background-color: #5495bd;
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d1;
+}
 
 .visit-sedona {
   font-size: 21px;
