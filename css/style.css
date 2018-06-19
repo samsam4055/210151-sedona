@@ -570,13 +570,38 @@ a {
 }
 
 .rating {
+  display: block;
+  position: relative;
   margin-left: auto;
   background-color: #f1f1f1;
   font-size: 14px;
   line-height: 21px;
   color: rgb(102, 102, 102);
   text-align: center;
-  padding: 5px 13px 6px 16px;
+  width: 110px;
+  height: 27px;
+  padding-top: 3px;
+  margin-top: 65px;
+}
+
+.rating::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 17px;
+  background: url("../img/svg/star.svg") repeat-x;
+  top: -47px;
+  left: 38px;
+}
+
+.rating-desert::before {
+  width: 54px;
+  left: 56px;
+}
+
+.rating-villas-poco::before {
+  width: 36px;
+  left: 74px;
 }
 
 .catalog-description {
