@@ -557,6 +557,33 @@ a {
   color: rgb(129, 179, 210);
 }
 
+.sorting-arrows {
+  margin-left: auto;
+}
+
+.sorting-arrows li {
+  padding-right: 0;
+}
+
+.up-arrow a {
+  display: block;
+  border: 10px solid transparent;
+  border-bottom-color: yellowgreen;
+  border-top: 0;
+
+}
+
+.down-arrow a {
+  display: flex;
+  border: 10px solid transparent;
+  border-top-color: orangered;
+  border-bottom: 0;
+  }
+
+.down-arrow {
+  padding-left: 12px;
+  }
+
 .catalog-items {
   display: flex;
   flex-direction: column;
