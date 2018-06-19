@@ -528,6 +528,7 @@ a {
 
 .catalog-header ul {
   display: inline-flex;
+  padding-left: 0px;
 }
 
 .catalog-header li {
@@ -537,19 +538,19 @@ a {
 
 .catalog-header p {
   padding-right: 40px;
-  padding-left: 50px;
+  padding-left: 45px;
   align-self: center;
 }
 
-.catalog-header a:hover {
+.catalog-sorting a:hover {
   color: rgb(129, 179, 210);
 }
 
-.catalog-header a:active {
+.catalog-sorting a:active {
   color: rgb(0, 0, 0);
 }
 
-.catalog-header a {
+.catalog-sorting a {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -566,19 +567,30 @@ a {
 }
 
 .up-arrow a {
-  display: block;
+  display: flex;
   border: 10px solid transparent;
-  border-bottom-color: yellowgreen;
+  border-bottom-color: #c9c9c9;
   border-top: 0;
-
 }
 
 .down-arrow a {
   display: flex;
   border: 10px solid transparent;
-  border-top-color: orangered;
+  border-top-color: #81b3d1;
   border-bottom: 0;
-  }
+}
+
+.up-arrow a:hover,
+.down-arrow a:hover {
+  border-bottom-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+}
+
+.up-arrow a:active,
+.down-arrow a:active {
+  border-bottom-color: #81b3d1;
+  border-top-color: #81b3d1;
+}
 
 .down-arrow {
   padding-left: 12px;
@@ -613,13 +625,14 @@ a {
   margin-top: 65px;
 }
 
+
 .rating::before {
   content: "";
   position: absolute;
   width: 72px;
   height: 17px;
   background: url("../img/svg/star.svg") repeat-x;
-  top: -47px;
+  top: -65px;
   left: 38px;
 }
 
