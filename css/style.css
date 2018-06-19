@@ -509,6 +509,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  align-self: center;
 }
 
 .catalog li {
@@ -517,6 +518,7 @@ a {
 
 .catalog-header {
   display: flex;
+  min-height: 86px;
   font-size: 12px;
   line-height: 18px;
   padding-left: 6%;
@@ -534,9 +536,9 @@ a {
 }
 
 .catalog-header p {
-  padding-top: 13px;
   padding-right: 40px;
   padding-left: 50px;
+  align-self: center;
 }
 
 .catalog-header a:hover {
