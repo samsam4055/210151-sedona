@@ -392,6 +392,13 @@ a {
   margin: auto;
 }
 
+.search-item {
+  position: relative;
+}
+
+.search-calendar-btn {
+  position: absolute;
+}
 .search-form-btn {
   width: 568px;
   height: 86px;
@@ -568,16 +575,24 @@ a {
 
 .up-arrow a {
   display: flex;
-  border: 10px solid transparent;
+
+  border: solid transparent;
   border-bottom-color: #c9c9c9;
   border-top: 0;
+  border-bottom-width: 13px;
+  border-right-width: 7px;
+  border-left-width: 7px;
 }
+
 
 .down-arrow a {
   display: flex;
-  border: 10px solid transparent;
+  border: solid transparent;
   border-top-color: #81b3d1;
   border-bottom: 0;
+  border-top-width: 13px;
+  border-right-width: 7px;
+  border-left-width: 7px;
 }
 
 .up-arrow a:hover,
@@ -619,7 +634,7 @@ a {
   line-height: 21px;
   color: rgb(102, 102, 102);
   text-align: center;
-  width: 110px;
+  min-width: 110px;
   height: 27px;
   padding-top: 3px;
   margin-top: 65px;
