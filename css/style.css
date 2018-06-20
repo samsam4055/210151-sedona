@@ -81,10 +81,13 @@ a {
   margin-left: 20%;
 }
 
-.site-navigation .current-page a {
-  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
-  color: rgb(118, 99, 87);
+.site-navigation  a.current-page,
+.site-navigation  a.current-page:hover,
+.site-navigation  a.current-page:active {
+color: rgb(118, 99, 87);
 }
+  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
+
 
 .site-navigation a:hover {
   color: rgb(129, 179, 210);
@@ -738,15 +741,24 @@ a {
 
 .catalog-sorting a:active {
   color: rgb(0, 0, 0);
+  border: none;
 }
 
 .catalog-sorting a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.header-catalog-sorting a {
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
 .current-sorting a {
   color: rgb(129, 179, 210);
+  border: none;
 }
+
+
+
 
 .sorting-arrows {
   margin-left: auto;
@@ -822,21 +834,22 @@ a {
 .rating::before {
   content: "";
   position: absolute;
-  width: 72px;
+  width: 88px;
   height: 17px;
-  background: url("../img/svg/star.svg") repeat-x;
+  background: url("../img/svg/star.svg") space no-repeat;
+  /* background-repeat: space no-repeat; */
   top: -65px;
-  left: 38px;
+  left: 21px;
 }
 
 .rating-desert::before {
-  width: 54px;
-  left: 56px;
+  width: 66px;
+  left: 44px;
 }
 
 .rating-villas-poco::before {
-  width: 36px;
-  left: 74px;
+  width: 42px;
+  left: 67px;
 }
 
 .catalog-description {
