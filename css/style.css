@@ -407,19 +407,41 @@ a {
   color: rgb(0,0,0);
   font-weight: bold;
 }
-#search-date-arrival, #search-date-departure {
+
+#search-date-arrival  {
   background-color: #f1f1f1;
   border: none;
   width: 346px;
   height: 38px;
   margin-left: 20px;
-
+  padding-left: 13px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0,0,0);
+  font-weight: bold;
+  text-transform: uppercase;
 }
- #search-quantity-adults  {
+
+#search-date-departure {
+  background-color: #f1f1f1;
+  border: none;
+  width: 346px;
+  height: 38px;
+  margin-left: 18px;
+  padding-left: 13px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0,0,0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#search-quantity-adults  {
    background-color: #f1f1f1;
     width: 114px;
     height: 38px;
     border: none;
+    margin-left: 41px;
 }
 
 #search-quantity-children {
@@ -427,8 +449,12 @@ a {
    width: 114px;
    height: 38px;
    border: none;
+   margin-left: 20px;
 }
 
+.search-children {
+  padding-left: 53px;
+}
 
 .search-calendar-btn {
   position: absolute;
@@ -449,7 +475,7 @@ a {
 
 .search-calendar-btn:active {
   fill: #81b3d1;
-  }
+}
 
 .search-form-btn {
   width: 568px;
@@ -487,6 +513,7 @@ a {
   text-transform: uppercase;
   border: none;
   padding: 0;
+  margin-top: 25px;
 }
 
 .search-btn:hover {
