@@ -208,9 +208,7 @@ a {
 .housing-meal-souvenirs .meal {
   background: url("../img/svg/icon-2.svg") no-repeat;
   background-position: center 62px;
-  /* подобрать значение */
   padding-top: 162px;
-  /* подобрать значение */
   min-height: 330px;
 }
 
@@ -361,7 +359,6 @@ a {
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
   border: 0;
@@ -393,13 +390,66 @@ a {
   margin: auto;
 }
 
+.search-form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  padding-left: 55px;
+  padding-top: 55px;
+
+}
+
 .search-item {
   position: relative;
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0,0,0);
+  font-weight: bold;
 }
+#search-date-arrival, #search-date-departure {
+  background-color: #f1f1f1;
+  border: none;
+  width: 346px;
+  height: 38px;
+  margin-left: 20px;
+
+}
+ #search-quantity-adults  {
+   background-color: #f1f1f1;
+    width: 114px;
+    height: 38px;
+    border: none;
+}
+
+#search-quantity-children {
+  background-color: #f1f1f1;
+   width: 114px;
+   height: 38px;
+   border: none;
+}
+
 
 .search-calendar-btn {
   position: absolute;
+  /* top: 50%; */
+  /* transition: translateY(-50%); */
+  right: 9px;
+  top: 8px;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  fill: #c9c9c9;
 }
+
+.search-calendar-btn:hover {
+  fill: #000000;
+  }
+
+.search-calendar-btn:active {
+  fill: #81b3d1;
+  }
 
 .search-form-btn {
   width: 568px;
@@ -437,7 +487,6 @@ a {
   text-transform: uppercase;
   border: none;
   padding: 0;
-  margin-left: 55px;
 }
 
 .search-btn:hover {
@@ -537,7 +586,7 @@ a {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   cursor: pointer;
 }
