@@ -241,13 +241,10 @@ a {
 }
 
 .search-map {
+  display: flex;
   width: 100%;
-  height: 593px;
+  justify-content: center;
   overflow: hidden;
-}
-
-.search-map img {
-  z-index: -1;
 }
 
 .empty {
@@ -393,7 +390,6 @@ a {
 .search-form {
   display: inline-flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   padding-left: 55px;
   padding-top: 55px;
 
@@ -471,7 +467,7 @@ a {
 
 .search-calendar-btn:hover {
   fill: #000000;
-  }
+}
 
 .search-calendar-btn:active {
   fill: #81b3d1;
