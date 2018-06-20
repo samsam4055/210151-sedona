@@ -99,7 +99,6 @@ a {
   width: 100%;
   height: 100%;
   background: url("../img/welcome-bottom.png") no-repeat, url("../img/sedona-welcome.jpg") no-repeat;
-
   background-size: 100% 57px, auto;
   background-position: center bottom, center 20%;
   /* разобраться что означает эти 20% */
@@ -119,8 +118,6 @@ a {
   min-height: 216px;
   padding-top: 40px;
   padding-bottom: 42px;
-
-
 }
 
 .welcome-txt p {
@@ -139,7 +136,6 @@ a {
   color: rgb(51, 51, 51);
   text-align: center;
   font-weight: normal;
-
 }
 
 .features {
@@ -195,7 +191,6 @@ a {
 .features-item p {
   font-size: 14px;
   line-height: 21px;
-
 }
 
 .housing-meal-souvenirs {
@@ -301,6 +296,7 @@ a {
 .footer-social li {
   list-style-type: none;
 }
+
 .footer-social ul {
   display: flex;
   width: 150px;
@@ -310,18 +306,14 @@ a {
   padding: 0;
 }
 
-
 .social-button:hover {
   background-color: #669dc0;
 }
 
-.social-button:active path,
-.social-button:active {
+.social-button:active path, .social-button:active {
   background-color: #5495bd;
   fill: rgba(255, 255, 255, 0.3);
 }
-
-
 
 .social-button {
   display: flex;
@@ -408,6 +400,7 @@ a {
 .search-calendar-btn {
   position: absolute;
 }
+
 .search-form-btn {
   width: 568px;
   height: 86px;
@@ -499,156 +492,130 @@ a {
   width: 50%;
   display: block;
   position: relative;
+  border: none;
 }
 
-/* плозунок */
+/* фильтр ползунок */
 
 .filter-range {
-width: 315px;
-margin: 50px auto; /* для демо */
-
-color: #ffffff;
-text-transform: uppercase;
-}
-
-.filter-range-title {
-margin-bottom: 9px;
-
-font-weight: 600;
-font-size: 16px;
-line-height: 21px;
-}
-
-.price-controls {
-position: relative;
-
-height: 36px;
-margin-bottom: 20px;
-
-font-size: 0;
-
-border: 2px solid #ffffff;
-border-radius: 2px;
-}
-
-.price-controls::after {
-content: "";
-position: absolute;
-top: 50%;
-left: 50%;
-
-width: 2px;
-height: 22px;
-
-background: #ffffff;
-transform: translate(-50%, -50%);
-}
-
-.price-controls label {
-display: inline-block;
-
-font-size: 14px;
-line-height: 38px;
-vertical-align: top;
-
-cursor: pointer;
-}
-
-.price-controls .min-price,
-.price-controls .max-price {
-width: 145px;
-padding-left: 65px;
-}
-
-.price-controls input {
-width: 50px;
-margin: 0;
-
-color: inherit;
-font: inherit;
-
-background: none;
-border: none;
-}
-
-.range-controls {
-position: relative;
-
-margin-bottom: 32px;
-}
-
-.range-controls .scale {
-height: 2px;
-
-background: rgba(255, 255, 255, 0.3);
-}
-
-.range-controls .bar {
-width: 80%;
-height: 2px;
-
-background: #ffffff;
-}
-
-.range-toggle {
-position: absolute;
-top: -9px;
-
-width: 4px;
-height: 4px;
-
-background: #ababab;
-border: 8px solid #ffffff;
-border-radius: 50%;
-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-cursor: pointer;
-}
-
-.range-toggle:hover {
-background: #1c4f80;
-}
-
-.range-toggle-min {
-left: 0;
-}
-
-.range-toggle-max {
-left: 80%;
-}
-
-.btn-transparent {
-display: block;
-margin: 0 auto;
-padding: 6px 35px;
-
-font-size: 14px;
-line-height: 20px;
-color: #ffffff;
-text-transform: uppercase;
-
-background: transparent;
-border: 2px solid #ffffff;
-border-radius: 2px;
-cursor: pointer;
-}
-/* ползунок */
-
-/*
-.filter-button {
-  background: none;
-  border: 2px solid #ffffff;
-  width: 133px;
-  height: 32px;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgb(255, 255, 255);
+  width: 63.5%;
+  min-width: 218px;
+  margin-top: 20px;
+  /* для демо */
+  margin-left: auto;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
-.filter-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-} */
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price, .price-controls .max-price {
+  width: 49.5%;
+  padding-left: 15%;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 21px;
+  height: 21px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  background: #ababab;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+/* фильтр ползунок конец */
 
 /* секция каталог */
 
@@ -719,7 +686,6 @@ cursor: pointer;
 
 .up-arrow a {
   display: flex;
-
   border: solid transparent;
   border-bottom-color: #c9c9c9;
   border-top: 0;
@@ -727,7 +693,6 @@ cursor: pointer;
   border-right-width: 6px;
   border-left-width: 6px;
 }
-
 
 .down-arrow a {
   display: flex;
@@ -739,21 +704,19 @@ cursor: pointer;
   border-left-width: 6px;
 }
 
-.up-arrow a:hover,
-.down-arrow a:hover {
+.up-arrow a:hover, .down-arrow a:hover {
   border-bottom-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
 }
 
-.up-arrow a:active,
-.down-arrow a:active {
+.up-arrow a:active, .down-arrow a:active {
   border-bottom-color: #81b3d1;
   border-top-color: #81b3d1;
 }
 
 .down-arrow {
   padding-left: 12px;
-  }
+}
 
 .catalog-items {
   display: flex;
@@ -783,7 +746,6 @@ cursor: pointer;
   padding-top: 3px;
   margin-top: 65px;
 }
-
 
 .rating::before {
   content: "";
