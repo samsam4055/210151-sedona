@@ -613,23 +613,25 @@ color: rgb(118, 99, 87);
   display: block;
   position: relative;
   border: none;
+  padding: 0;
 }
 
 /* фильтр ползунок */
 
 .filter-range {
-  width: 63.5%;
+  width: 60.5%;
   min-width: 218px;
-  margin-top: 20px;
-  /* для демо */
+  margin-top: 29px;
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 0;
+
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 16px;
   line-height: 21px;
 }
@@ -657,14 +659,16 @@ color: rgb(118, 99, 87);
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 30px;
-  vertical-align: top;
+  line-height: 21px;
+  /* vertical-align: bottom; */
+  padding-top: 5px;
   cursor: pointer;
 }
 
 .price-controls .min-price, .price-controls .max-price {
-  width: 49.5%;
-  padding-left: 15%;
+  width: 48.5%;
+  padding-left: 14%;
+  text-align: center;
 }
 
 .price-controls input {
@@ -721,10 +725,10 @@ color: rgb(118, 99, 87);
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 26.66%;
+  padding: 6px 34px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -751,10 +755,15 @@ color: rgb(118, 99, 87);
   line-height: 26px;
   font-weight: bold;
   align-self: center;
+  }
+
+.catalog-header p {
+  padding-top: 5px;
 }
 
 .catalog li {
   list-style-type: none;
+  padding-top: 5px;
 }
 
 .catalog-header {
@@ -882,21 +891,20 @@ color: rgb(118, 99, 87);
   height: 17px;
   background: url("../img/svg/star.svg") space no-repeat;
   top: -65px;
+  right: 0;
 }
 
 .rating-amara {
-  width: 88px;
-  left: 21px;
+  width: 89px;
 }
 
 .rating-desert {
   width: 66px;
-  left: 44px;
+
 }
 
 .rating-villas-poco {
   width: 42px;
-  left: 67px;
 }
 
 .catalog-description {
