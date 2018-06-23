@@ -705,7 +705,10 @@ color: rgb(118, 99, 87);
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  top: -10px;
+  border: 9px solid #ffffff;
+  width: 23px;
+  height: 23px;
 }
 
 .range-toggle-min {
@@ -802,9 +805,6 @@ color: rgb(118, 99, 87);
   border: none;
 }
 
-
-
-
 .sorting-arrows {
   margin-left: auto;
 }
@@ -876,23 +876,25 @@ color: rgb(118, 99, 87);
   margin-top: 65px;
 }
 
-.rating::before {
-  content: "";
+.stars {
   position: absolute;
-  width: 88px;
+  display: block;
   height: 17px;
   background: url("../img/svg/star.svg") space no-repeat;
-  /* background-repeat: space no-repeat; */
   top: -65px;
+}
+
+.rating-amara {
+  width: 88px;
   left: 21px;
 }
 
-.rating-desert::before {
+.rating-desert {
   width: 66px;
   left: 44px;
 }
 
-.rating-villas-poco::before {
+.rating-villas-poco {
   width: 42px;
   left: 67px;
 }
