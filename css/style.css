@@ -37,6 +37,7 @@ body {
   padding-left: 0px;
   /* если явно не указать откуда-то появляется паддинг 40 пикс. */
   margin: 0px;
+
 }
 
 .main-navigation {
@@ -68,17 +69,27 @@ a {
   width: 20%;
   list-style-type: none;
   padding-top: 14px;
-  /* размер блока 56 делить на 2 минус 14 шрифт */
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0, 0, 0);
-  /* позже привести все цвета к одному формату записи */
-  text-align: center;
+
 }
 
 .site-navigation li:nth-child(3) {
   margin-left: 20%;
+}
+
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  padding-left: 6%;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:last-child {
+  text-align: right;
+  padding-right: 6%;
 }
 
 .site-navigation  a.current-page,
@@ -86,7 +97,6 @@ a {
 .site-navigation  a.current-page:active {
 color: rgb(118, 99, 87);
 }
-  /* сложный слектор, больше 2-х - иначе не удается перебить, ошибка? */
 
 
 .site-navigation a:hover {
