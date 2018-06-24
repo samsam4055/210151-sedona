@@ -747,6 +747,7 @@ color: rgb(118, 99, 87);
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  padding: 0;
 }
 
 .btn-transparent:hover {
