@@ -586,12 +586,26 @@ color: rgb(118, 99, 87);
   background-position: center;
   padding-left: 6%;
   padding-right: 6%;
+  padding-top: 27px;
+}
+
+.infrastructure, .type-of-housing {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 25%;
+}
+
+
+.type-of-housing {
+  /* margin-right: 24px; */
 }
 
 .filter-form {
   display: flex;
   width: 100%;
   list-style-type: none;
+
 }
 
 .filters li {
@@ -603,6 +617,7 @@ color: rgb(118, 99, 87);
   line-height: 21px;
   color: rgb(255, 255, 255);
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .filter-form label {
@@ -611,8 +626,44 @@ color: rgb(118, 99, 87);
   color: rgb(255, 255, 255);
 }
 
-.infrastructure, .type-of-housing {
-  width: 25%;
+.filter-form ul {
+  padding: 0;
+  margin: 0;
+}
+
+.filter-option {
+  /* background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green; */
+  margin-bottom: 25px;
+  padding-left: 38px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/svg/checkbox-off.svg") no-repeat;;
+    /* background-position: 0 0; */
+
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("../img/svg/checkbox-on.svg") no-repeat;;
+    /* background-position: 0 0; */
+
 }
 
 .cost-per-day {
@@ -628,7 +679,7 @@ color: rgb(118, 99, 87);
 .filter-range {
   width: 60.5%;
   min-width: 218px;
-  margin-top: 27px;
+  /* margin-top: 27px; */
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
