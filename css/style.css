@@ -732,7 +732,9 @@ color: rgb(118, 99, 87);
 
 .btn-transparent {
   display: block;
-  margin-left: 26.66%;
+  position: absolute;
+  right: 18%;
+  /* margin-left: 26.66%; */
   padding: 6px 34px;
   font-size: 14px;
   line-height: 21px;
@@ -795,7 +797,7 @@ color: rgb(118, 99, 87);
 
 .catalog-header p {
   padding-right: 40px;
-  padding-left: 45px;
+  padding-left: 46px;
   align-self: center;
 }
 
@@ -871,7 +873,7 @@ color: rgb(118, 99, 87);
 .catalog-item {
   display: flex;
   align-items: center;
-  min-height: 150px;
+  min-height: 151px;
   border-bottom: solid #e5e5e5 1px;
   padding-left: 6%;
   padding-right: 6%;
