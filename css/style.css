@@ -667,7 +667,7 @@ color: rgb(118, 99, 87);
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
-  
+
   padding-top: 6px;
   cursor: pointer;
 }
@@ -732,10 +732,13 @@ color: rgb(118, 99, 87);
 
 .btn-transparent {
   display: block;
-  position: absolute;
-  right: 18%;
-  /* margin-left: 26.66%; */
-  padding: 6px 34px;
+  position: relative;
+  /* margin-left: 26.66%;  если ровнять так, не сходится на минимальной ширине */
+  margin: 0 auto;  /* а так не сходится на ширине 1200 */
+  width: 136px;
+  height: 36px;
+
+  /* padding: 6px 34px; */
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
