@@ -628,7 +628,7 @@ color: rgb(118, 99, 87);
 .filter-range {
   width: 60.5%;
   min-width: 218px;
-  margin-top: 29px;
+  margin-top: 27px;
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
@@ -667,15 +667,15 @@ color: rgb(118, 99, 87);
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
-  /* vertical-align: bottom; */
-  padding-top: 5px;
+  
+  padding-top: 6px;
   cursor: pointer;
 }
 
 .price-controls .min-price, .price-controls .max-price {
-  width: 48.5%;
-  padding-left: 14%;
-  text-align: center;
+  width: 47.5%;
+  padding-right: 4%;
+  text-align: right;
 }
 
 .price-controls input {
@@ -797,7 +797,7 @@ color: rgb(118, 99, 87);
 
 .catalog-header p {
   padding-right: 40px;
-  padding-left: 46px;
+  padding-left: 48px;
   align-self: center;
 }
 
