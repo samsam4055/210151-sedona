@@ -855,12 +855,12 @@ color: rgb(118, 99, 87);
   border-left-width: 6px;
 }
 
-.down-arrow a:hover {
+.up-arrow a:hover {
   border-bottom-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
 }
 
-.down-arrow a:active {
+.up-arrow a:active {
   border-bottom-color: #81b3d1;
   border-top-color: #81b3d1;
 }
