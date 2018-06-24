@@ -698,7 +698,7 @@ color: rgb(118, 99, 87);
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: calc(100% - 62px);
   height: 2px;
   background: #ffffff;
 }
@@ -727,7 +727,7 @@ color: rgb(118, 99, 87);
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: calc(100% - 62px);
 }
 
 .btn-transparent {
