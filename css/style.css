@@ -632,8 +632,6 @@ color: rgb(118, 99, 87);
 }
 
 .filter-option {
-  /* background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green; */
   margin-bottom: 25px;
   padding-left: 38px;
 }
@@ -651,7 +649,7 @@ color: rgb(118, 99, 87);
   left: -38px;
   width: 25px;
   height: 25px;
-  background: url("../img/svg/checkbox-off.svg") no-repeat;;
+  background: url("../img/svg/checkbox-off.svg") no-repeat;
     /* background-position: 0 0; */
 
 }
@@ -661,9 +659,17 @@ color: rgb(118, 99, 87);
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url("../img/svg/checkbox-on.svg") no-repeat;;
-    /* background-position: 0 0; */
+  background: url("../img/svg/checkbox-on.svg") no-repeat;
+}
 
+.filter-input-checkbox:disabled + label::before {
+  background: url("../img/svg/checkbox-off.svg") no-repeat;
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:disabled:checked + label::before {
+  background: url("../img/svg/checkbox-on.svg") no-repeat;
+  opacity: 0.3;
 }
 
 .cost-per-day {
