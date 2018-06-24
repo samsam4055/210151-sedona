@@ -822,7 +822,7 @@ color: rgb(118, 99, 87);
   border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
-.current-sorting a {
+.current-sorting a, .current-sorting a:active {
   color: rgb(129, 179, 210);
   border: none;
 }
@@ -855,12 +855,12 @@ color: rgb(118, 99, 87);
   border-left-width: 6px;
 }
 
-.up-arrow a:hover, .down-arrow a:hover {
+.down-arrow a:hover {
   border-bottom-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
 }
 
-.up-arrow a:active, .down-arrow a:active {
+.down-arrow a:active {
   border-bottom-color: #81b3d1;
   border-top-color: #81b3d1;
 }
