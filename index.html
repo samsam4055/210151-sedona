@@ -104,15 +104,19 @@
               </div>
               <div class="search-item search-adults">
                 <label for="search-quantity-adults">Взрослые:</label>
-                <button class="quantity-btn btn-adults-minus" type="button">–</button>
+                <button class="quantity-btn btn-adults-minus" type="button" onclick="document.getElementById('search-quantity-adults').value=parseInt(document.getElementById('search-quantity-adults').value)-1">–</button>
                 <input id="search-quantity-adults" type="text" name="quantity-adults" value="2">
-                <button class="quantity-btn btn-adults-plus" type="button">+</button>
+                <button class="quantity-btn btn-adults-plus" type="button"
+                onclick="document.getElementById('search-quantity-adults').value=parseInt(document.getElementById('search-quantity-adults').value)+1"
+                >+</button>
               </div>
               <div class="search-item search-children">
                 <label for="search-quantity-children">Дети:</label>
-                <button class="quantity-btn btn-children-minus" type="button">–</button>
+                <button class="quantity-btn btn-children-minus" type="button" onclick= "document.getElementById('search-quantity-children').value=parseInt(document.getElementById('search-quantity-children').value)-1">–
+                </button>
                 <input id="search-quantity-children" type="text" name="quantity-children" value="0">
-                <button class="quantity-btn btn-children-plus" type="button">+</button>
+                <button class="quantity-btn btn-children-plus" type="button" onclick= "document.getElementById('search-quantity-children').value=parseInt(document.getElementById('search-quantity-children').value)+1">+
+                </button>
               </div>
               <button class="search-btn" type="submit">Найти</button>
             </form>
