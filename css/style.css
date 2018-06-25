@@ -5,13 +5,13 @@
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;	
+          box-sizing: border-box;
 }
-img { 
+img {
   max-width: 100%;
 }
-a { 
-  text-decoration: none; 
+a {
+  text-decoration: none;
 }
 
 body {
@@ -296,7 +296,7 @@ color: rgb(118, 99, 87);
   overflow: hidden;
   background: url("../img/map.jpg") no-repeat;
   background-position: center;
-  
+
 }
 
 .empty {
@@ -575,7 +575,7 @@ color: rgb(118, 99, 87);
   width: 346px;
   height: 38px;
   margin-left: 20px;
-  padding-left: 13px;
+  padding-left: 15px;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0);
@@ -602,25 +602,76 @@ color: rgb(118, 99, 87);
     width: 114px;
     height: 38px;
     border: none;
-    margin-left: 41px;
+    margin-left: 38px;
+    /* padding-left: 46px; */
+    font-size: 14px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2px;
 }
 
 #search-quantity-children {
   background-color: #f1f1f1;
-   width: 114px;
-   height: 38px;
-   border: none;
-   margin-left: 20px;
+  width: 114px;
+  height: 38px;
+  border: none;
+  margin-left: 24px;
+  /* padding-left: 46px; */
+  font-size: 14px;
+  color: rgb(0,0,0);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2px;
 }
 
 .search-children {
   padding-left: 53px;
 }
 
+.quantity-btn {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #f1f1f1;
+  font-size: 21px;
+  line-height: 21px;
+  color:#c9c9c9;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.btn-adults-minus {
+  left: 114px;
+}
+
+.btn-adults-plus {
+  left: 188px;
+}
+
+.btn-children-minus {
+  left: 119px;
+}
+
+.btn-children-plus {
+  left: 195px;
+}
+
+.search-calendar-btn:hover {
+  fill: #000000;
+}
+
+.search-calendar-btn:active {
+  fill: #81b3d1;
+}
+
 .search-calendar-btn {
   position: absolute;
-  /* top: 50%; */
-  /* transition: translateY(-50%); */
   right: 9px;
   top: 8px;
   border: none;
@@ -630,12 +681,12 @@ color: rgb(118, 99, 87);
   fill: #c9c9c9;
 }
 
-.search-calendar-btn:hover {
-  fill: #000000;
+.quantity-btn:hover {
+  color: #000000;
 }
 
-.search-calendar-btn:active {
-  fill: #81b3d1;
+.quantity-btn:active {
+  color: #81b3d1;
 }
 
 .search-form-btn {
