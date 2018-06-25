@@ -93,8 +93,8 @@
             <li class="catalog-sorting"><a href="#">По рейтингу</a></li>
           </ul>
           <ul class="sorting-arrows">
-            <li class="up-arrow"><a href="#"></a></li>
-            <li class="down-arrow"><a href="#"></a></li>
+            <li class="up-arrow"><a class="up-arrow-js" href="#"></a></li>
+            <li class="down-arrow"><a class="down-arrow-js" href="#"></a></li>
           </ul>
         </div>
         <div class="catalog-items">
@@ -178,6 +178,25 @@
       </div>
     </footer>
   </div>
+
+  <script>
+        var link = document.querySelector(".up-arrow-js");
+        var sortup = document.querySelector(".catalog-items");
+
+        var downlink = document.querySelector(".down-arrow-js");
+        var sortdown = document.querySelector(".catalog-items");
+
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          sortup.classList.toggle("catalog-items-js");
+        });
+
+        downlink.addEventListener("click", function(event) {
+        event.preventDefault();
+        sortdown.classList.toggle("catalog-items");
+        });
+  </script>
+
 </body>
 
 </html>
