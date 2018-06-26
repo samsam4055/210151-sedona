@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
 </head>
 
 <body>
@@ -74,7 +75,7 @@
        <div class="scale">
          <div class="bar"></div>
        </div>
-       <div class="range-toggle range-toggle-min" id="circle" onMouseDown="move()" onKeyDown="stop()"></div>
+       <div class="range-toggle range-toggle-min" id="circle" onMouseDown="move()" onMouseUp="stop()"></div> <!--  тест ползунов -->
        <div class="range-toggle range-toggle-max"></div>
      </div>
      <button class="btn-transparent" type="submit">Показать</button>
@@ -205,11 +206,11 @@
         arrowDown.classList.add("current-arrow");
         });
 
-
-      //
+<!--  тест ползунов -->
       //   var div = document.getElementById('circle');
+      //
       //   var listener = function(e) {
-      //   div.style.left = e.pageX + "px";
+      //   div.style.left = e.pageX - 980 + "px";
       //
       //   };
       //
@@ -220,9 +221,10 @@
       //   function stop() {
       //   document.removeEventListener('mousemove', listener);
       // }
-
+<!--  тест ползунов -->
 
   </script>
+
 
 </body>
 
