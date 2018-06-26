@@ -7,7 +7,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +74,7 @@
        <div class="scale">
          <div class="bar"></div>
        </div>
-       <div class="range-toggle range-toggle-min"></div>
+       <div class="range-toggle range-toggle-min" id="circle" onMouseDown="move()" onKeyDown="stop()"></div>
        <div class="range-toggle range-toggle-max"></div>
      </div>
      <button class="btn-transparent" type="submit">Показать</button>
@@ -181,29 +181,47 @@
 
   <script>
         var link = document.querySelector(".up-arrow-js");
-        var sortup = document.querySelector(".catalog-items");
+        var sortUp = document.querySelector(".catalog-items");
 
-        var downlink = document.querySelector(".down-arrow-js");
-        var sortdown = document.querySelector(".catalog-items");
+        var downLink = document.querySelector(".down-arrow-js");
+        var sortDown = document.querySelector(".catalog-items");
 
-        var arrowup = document.querySelector(".up-arrow");
-        var arrowcur = document.querySelector(".current-arrow");
+        var arrowUp = document.querySelector(".up-arrow");
+        var arrowCur = document.querySelector(".current-arrow");
 
-        var arrowdown = document.querySelector(".down-arrow");
+        var arrowDown = document.querySelector(".down-arrow");
 
         link.addEventListener("click", function(event) {
           event.preventDefault();
-          sortup.classList.add("catalog-items-js");
-          arrowup.classList.add("current-arrow");
-          arrowdown.classList.remove("current-arrow");
+          sortUp.classList.add("catalog-items-js");
+          arrowUp.classList.add("current-arrow");
+          arrowDown.classList.remove("current-arrow");
         });
 
-        downlink.addEventListener("click", function(event) {
+        downLink.addEventListener("click", function(event) {
         event.preventDefault();
-        sortdown.classList.remove("catalog-items-js");
-        arrowup.classList.remove("current-arrow");
-        arrowdown.classList.add("current-arrow");
+        sortDown.classList.remove("catalog-items-js");
+        arrowUp.classList.remove("current-arrow");
+        arrowDown.classList.add("current-arrow");
         });
+
+
+      //
+      //   var div = document.getElementById('circle');
+      //   var listener = function(e) {
+      //   div.style.left = e.pageX + "px";
+      //
+      //   };
+      //
+      //   function move() {
+      //   document.addEventListener('mousemove', listener);
+      //   }
+      //
+      //   function stop() {
+      //   document.removeEventListener('mousemove', listener);
+      // }
+
+
   </script>
 
 </body>
