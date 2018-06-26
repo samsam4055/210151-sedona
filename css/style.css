@@ -1097,19 +1097,24 @@ color: rgb(118, 99, 87);
   display: -ms-flexbox;
   display: flex;
   border: solid transparent;
-  border-top-color: #81b3d1;
+  border-top-color:  #c9c9c9;
   border-bottom: 0;
   border-top-width: 10px;
   border-right-width: 6px;
   border-left-width: 6px;
 }
 
-.up-arrow a:hover {
+.up-arrow a:hover, .down-arrow a:hover {
   border-bottom-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
 }
 
-.up-arrow a:active {
+.up-arrow a:active, .down-arrow a:active {
+  border-bottom-color: #81b3d1;
+  border-top-color: #81b3d1;
+}
+
+.current-arrow a, .current-arrow a:hover {
   border-bottom-color: #81b3d1;
   border-top-color: #81b3d1;
 }
