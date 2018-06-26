@@ -188,12 +188,12 @@
 
         link.addEventListener("click", function(event) {
           event.preventDefault();
-          sortup.classList.toggle("catalog-items-js");
+          sortup.classList.add("catalog-items-js");
         });
 
         downlink.addEventListener("click", function(event) {
         event.preventDefault();
-        sortdown.classList.toggle("catalog-items");
+        sortdown.classList.remove("catalog-items-js");
         });
   </script>
 
