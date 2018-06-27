@@ -193,10 +193,12 @@
       $.datepicker.setDefaults($.datepicker.regional['ru']);
       $('#search-date-arrival').datepicker({
         showOn: "focus",
+		minDate: "0",
        });
 
       $('#search-date-departure').datepicker({
         showOn: "focus",
+		minDate: "0",
 		});
     });
 
@@ -217,12 +219,12 @@
   
   form.addEventListener("submit", function (evt) {
   
-  if (searchQuantityAdults.value < 1 || searchQuantityChildren.value < 0 ) {
+  if (searchQuantityAdults.value <= 0 || searchQuantityChildren.value < 0 ) { 
       evt.preventDefault();
 	  popupWindow.classList.remove("modal-error");
       popupWindow.offsetWidth = popupWindow.offsetWidth;
       popupWindow.classList.add("modal-error");
-    }
+    } 
   });
   
     </script>
