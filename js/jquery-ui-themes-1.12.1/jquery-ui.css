@@ -953,7 +953,7 @@ a:visited.ui-button,
 .ui-button:hover,
 .ui-button:focus {
 	border: 1px solid #cccccc;
-	background: #ededed;
+	background: #81b3d2;
 	font-weight: normal;
 	color: #2b2b2b;
 }
@@ -981,7 +981,7 @@ a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
 	border: 1px solid #003eff;
-	background:  #81b3d2;
+	background: #756357;
 	font-weight: normal;
 	color: #ffffff;
 }
@@ -1002,7 +1002,7 @@ a.ui-button:active,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #dad55e;
+	border: 1px solid red;
 	background: #604e43;
 	color: #ffffff;
 }
