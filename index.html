@@ -166,14 +166,24 @@
     </footer>
   </div>
   <script type="text/javascript">
-    function showElement(layer) {
+      function showElement(layer) {
       var myLayer = document.getElementById(layer);
       if (myLayer.style.display == "block") {
         myLayer.style.display = "none";
+		popupWindow.classList.remove("modal-error");
       } else {
         myLayer.style.display = "block";
       }
     }
+	
+	window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+       popupWindow.classList.remove("modal-error");
+	   popupWindow.style.display = "none";
+      }
+    });
+	
   </script>
 
 
@@ -183,17 +193,11 @@
       $.datepicker.setDefaults($.datepicker.regional['ru']);
       $('#search-date-arrival').datepicker({
         showOn: "focus",
-        // buttonImage: "calendar.svg",
-        // buttonImageOnly: true
-
-      });
+       });
 
       $('#search-date-departure').datepicker({
         showOn: "focus",
-        // buttonImage: "calendar.svg",
-        // buttonImageOnly: true
-      });
-
+		});
     });
 
     $('#call-calendar-arrival').click(function() {
@@ -204,6 +208,25 @@
       $('#search-date-departure').focus();
     });
   </script>
+  
+  <script type="text/javascript">
+  var form = document.querySelector(".search-form");  
+  var searchQuantityAdults = document.querySelector("#search-quantity-adults");
+  var searchQuantityChildren = document.querySelector("#search-quantity-children");
+  var popupWindow = document.querySelector(".popup-window");
+  
+  form.addEventListener("submit", function (evt) {
+  
+  if (searchQuantityAdults.value < 1 || searchQuantityChildren.value < 0 ) {
+      evt.preventDefault();
+	  popupWindow.classList.remove("modal-error");
+      popupWindow.offsetWidth = popupWindow.offsetWidth;
+      popupWindow.classList.add("modal-error");
+    }
+  });
+  
+    </script>
+  
 
 </body>
 
