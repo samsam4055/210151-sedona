@@ -206,7 +206,34 @@
         arrowDown.classList.add("current-arrow");
         });
 
-<!--  тест ползунов -->
+// активная сортировка шапки второй страницы
+
+        var byPrice = document.querySelector(".header-catalog-sorting li:nth-child(1)");
+        var byType = document.querySelector(".header-catalog-sorting li:nth-child(2)");
+        var byRating = document.querySelector(".header-catalog-sorting li:nth-child(3)");
+
+        byPrice.addEventListener("click", function(event) {
+          event.preventDefault();
+          byPrice.classList.add("current-sorting");
+          byType.classList.remove("current-sorting");
+          byRating.classList.remove("current-sorting");
+        });
+
+        byType.addEventListener("click", function(event) {
+          event.preventDefault();
+          byPrice.classList.remove("current-sorting");
+          byType.classList.add("current-sorting");
+          byRating.classList.remove("current-sorting");
+        });
+
+        byRating.addEventListener("click", function(event) {
+          event.preventDefault();
+          byPrice.classList.remove("current-sorting");
+          byType.classList.remove("current-sorting");
+          byRating.classList.add("current-sorting");
+        });
+
+//  тест ползунов
       //   var div = document.getElementById('circle');
       //
       //   var listener = function(e) {
@@ -221,7 +248,7 @@
       //   function stop() {
       //   document.removeEventListener('mousemove', listener);
       // }
-<!--  тест ползунов -->
+// тест ползунов
 
   </script>
 
