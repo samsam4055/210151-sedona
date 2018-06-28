@@ -7,7 +7,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
   <!-- календарь -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -175,7 +175,7 @@
         myLayer.style.display = "block";
       }
     }
-	
+
 	window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
@@ -183,7 +183,7 @@
 	   popupWindow.style.display = "none";
       }
     });
-	
+
   </script>
 
 
@@ -193,12 +193,14 @@
       $.datepicker.setDefaults($.datepicker.regional['ru']);
       $('#search-date-arrival').datepicker({
         showOn: "focus",
-		minDate: "0",
+		    minDate: "0",
+        dateFormat: "dd MM yy",
        });
 
       $('#search-date-departure').datepicker({
         showOn: "focus",
-		minDate: "1",
+		    minDate: "1",
+        dateFormat: "dd MM yy",
 		});
     });
 
@@ -210,25 +212,25 @@
       $('#search-date-departure').focus();
     });
   </script>
-  
+
   <script type="text/javascript">
-  var form = document.querySelector(".search-form");  
+  var form = document.querySelector(".search-form");
   var searchQuantityAdults = document.querySelector("#search-quantity-adults");
   var searchQuantityChildren = document.querySelector("#search-quantity-children");
   var popupWindow = document.querySelector(".popup-window");
-  
+
   form.addEventListener("submit", function (evt) {
-  
-  if (searchQuantityAdults.value <= 0 || searchQuantityChildren.value < 0 ) { 
+
+  if (searchQuantityAdults.value <= 0 || searchQuantityChildren.value < 0 ) {
       evt.preventDefault();
 	  popupWindow.classList.remove("modal-error");
       popupWindow.offsetWidth = popupWindow.offsetWidth;
       popupWindow.classList.add("modal-error");
-    } 
+    }
   });
-  
+
     </script>
-  
+
 
 </body>
 
