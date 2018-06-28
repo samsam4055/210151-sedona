@@ -810,7 +810,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   padding: 0;
   margin: 0;
   border: none;
-  width: calc(610px - 33.33%);
+  min-width: 237px;
 }
 
 
@@ -819,15 +819,17 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   padding: 0;
   margin: 0;
   border: none;
-  width: calc(625px - 33.33%);
+  width: 237px;
+  margin-left: auto;
 }
 
 .cost-per-day {
-  width: 50%;
+  width: 53.4%;
   display: block;
   position: relative;
   border: none;
   padding: 0;
+  margin: 0;
 }
 
 .filter-form {
@@ -916,8 +918,8 @@ div.search-item:nth-child(4) > label:nth-child(1) {
 /* фильтр ползунок */
 
 .filter-range {
-  width: 60.1%;
-  min-width: 218px;
+  width: 56.3%;
+  min-width: 219px;
   /* margin-top: 27px; */
   margin-left: auto;
   color: #ffffff;
@@ -990,7 +992,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
 }
 
 .range-controls .bar {
-  width: calc(100% - 62px);
+  width: calc(100% - 63px);
   height: 2px;
   background: #ffffff;
 }
@@ -1020,7 +1022,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
 }
 
 .range-toggle-max {
-  left: calc(100% - 62px);
+  left: calc(100% - 64px);
 }
 
 .btn-transparent {
