@@ -589,6 +589,16 @@ color: rgb(118, 99, 87);
   padding-top: 55px;
 }
 
+.search-form label {
+  display: inline-block;
+  width: 108px;
+}
+
+div.search-item:nth-child(4) > label:nth-child(1) {
+  /* display: inline-block; */
+  width: 63px;
+}
+
 .search-item {
   position: relative;
   padding-bottom: 29px;
@@ -603,8 +613,8 @@ color: rgb(118, 99, 87);
   border: none;
   width: 346px;
   height: 38px;
-  margin-left: 20px;
-  padding-left: 15px;
+  /* margin-left: 20px; */
+  padding-left: 14px;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0,0,0);
@@ -617,7 +627,7 @@ color: rgb(118, 99, 87);
   border: none;
   width: 346px;
   height: 38px;
-  margin-left: 18px;
+  /* margin-left: 18px; */
   padding-left: 13px;
   font-size: 14px;
   line-height: 26px;
@@ -631,7 +641,7 @@ color: rgb(118, 99, 87);
     width: 114px;
     height: 38px;
     border: none;
-    margin-left: 38px;
+    /* margin-left: 38px; */
     /* padding-left: 46px; */
     font-size: 14px;
     color: rgb(0,0,0);
@@ -645,7 +655,7 @@ color: rgb(118, 99, 87);
   width: 114px;
   height: 38px;
   border: none;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   /* padding-left: 46px; */
   font-size: 14px;
   color: rgb(0,0,0);
