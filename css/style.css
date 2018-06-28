@@ -806,16 +806,28 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   padding-top: 27px;
 }
 
-.infrastructure, .type-of-housing {
+.infrastructure {
   padding: 0;
   margin: 0;
   border: none;
-  width: 25%;
+  width: calc(610px - 33.33%);
 }
 
 
+
 .type-of-housing {
-  /* margin-right: 24px; */
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: calc(625px - 33.33%);
+}
+
+.cost-per-day {
+  width: 50%;
+  display: block;
+  position: relative;
+  border: none;
+  padding: 0;
 }
 
 .filter-form {
@@ -852,7 +864,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
 
 .filter-option {
   margin-bottom: 25px;
-  padding-left: 38px;
+  padding-left: 40px;
 }
 
 .filter-option label {
@@ -868,7 +880,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -38px;
+  left: -40px;
   width: 25px;
   height: 25px;
   background: url("../img/svg/checkbox-off.svg") no-repeat;
@@ -899,18 +911,12 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   padding: 0;
 }   рамка меняет размер элемента при фокусе   */
 
-.cost-per-day {
-  width: 50%;
-  display: block;
-  position: relative;
-  border: none;
-  padding: 0;
-}
+
 
 /* фильтр ползунок */
 
 .filter-range {
-  width: 60.5%;
+  width: 60.1%;
   min-width: 218px;
   /* margin-top: 27px; */
   margin-left: auto;
@@ -1021,7 +1027,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   display: block;
   position: relative;
   /* margin-left: 26.66%;  если ровнять так, не сходится на минимальной ширине */
-  margin: 0 auto;  /* а так не сходится на ширине 1200 */
+  margin-left: calc(50% - 73px);  /* а так не сходится на ширине 1200 */
   width: 136px;
   height: 36px;
 
