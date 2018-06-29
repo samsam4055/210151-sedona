@@ -92,10 +92,10 @@
         <div class="search-hotel">
           <span class="request">Заинтересовались?</span>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="search-form-btn" type="button" onclick="javascript:showElement('popup-window')">Поиск гостиницы в Седоне</button>
+          <button class="search-form-btn" type="button" id="call-popup">Поиск гостиницы в Седоне</button>
         </div>
         <div class="positioning-window">
-          <div id="popup-window" class="popup-window">
+          <div class="popup-window popup-on">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 
               <div class="search-item">
@@ -165,26 +165,6 @@
       </div>
     </footer>
   </div>
-  <script type="text/javascript">
-      function showElement(layer) {
-      var myLayer = document.getElementById(layer);
-      if (myLayer.style.display == "block") {
-        myLayer.style.display = "none";
-		popupWindow.classList.remove("modal-error");
-      } else {
-        myLayer.style.display = "block";
-      }
-    }
-
-	window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-       popupWindow.classList.remove("modal-error");
-	   popupWindow.style.display = "none";
-      }
-    });
-
-  </script>
 
 
   <script type="text/javascript">
@@ -214,23 +194,36 @@
   </script>
 
   <script type="text/javascript">
-  var form = document.querySelector(".search-form");
-  var searchQuantityAdults = document.querySelector("#search-quantity-adults");
-  var searchQuantityChildren = document.querySelector("#search-quantity-children");
-  var popupWindow = document.querySelector(".popup-window");
+    var form = document.querySelector(".search-form");
+    var searchQuantityAdults = document.querySelector("#search-quantity-adults");
+    var searchQuantityChildren = document.querySelector("#search-quantity-children");
+    var popupWindow = document.querySelector(".popup-window");
 
-  form.addEventListener("submit", function (evt) {
+    popupWindow.classList.remove("popup-on");
+      $('#call-popup').click(function() {
+        popupWindow.classList.toggle("popup-on");
+        popupWindow.classList.remove("modal-error");
+      });
 
-  if (searchQuantityAdults.value <= 0 || searchQuantityChildren.value < 0 ) {
-      evt.preventDefault();
-	  popupWindow.classList.remove("modal-error");
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+        popupWindow.classList.remove("modal-error");
+        popupWindow.classList.remove("popup-on");
+          }
+        });
+
+    form.addEventListener("submit", function (evt) {
+
+    if (searchQuantityAdults.value <= 0 || searchQuantityChildren.value < 0 ) {
+        evt.preventDefault();
+	    popupWindow.classList.remove("modal-error");
       popupWindow.offsetWidth = popupWindow.offsetWidth;
       popupWindow.classList.add("modal-error");
     }
-  });
+    });
 
-    </script>
-
+  </script>
 
 </body>
 
