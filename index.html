@@ -9,12 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
-  <!-- календарь -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui-i18n.js"></script>
   <link rel="stylesheet" href="js/jquery-ui-themes-1.12.1/jquery-ui.css">
-  <!-- календарь   -->
 
 </head>
 
@@ -165,66 +160,12 @@
       </div>
     </footer>
   </div>
-
-
-  <script type="text/javascript">
-    $(function() {
-
-      $.datepicker.setDefaults($.datepicker.regional['ru']);
-      $('#search-date-arrival').datepicker({
-        showOn: "focus",
-		    minDate: "0",
-        dateFormat: "dd MM yy",
-       });
-
-      $('#search-date-departure').datepicker({
-        showOn: "focus",
-		    minDate: "1",
-        dateFormat: "dd MM yy",
-		});
-    });
-
-    $('#call-calendar-arrival').click(function() {
-      $('#search-date-arrival').focus();
-    });
-
-    $('#call-calendar-departure').click(function() {
-      $('#search-date-departure').focus();
-    });
-  </script>
-
-  <script type="text/javascript">
-    var form = document.querySelector(".search-form");
-    var searchQuantityAdults = document.querySelector("#search-quantity-adults");
-    var searchQuantityChildren = document.querySelector("#search-quantity-children");
-    var popupWindow = document.querySelector(".popup-window");
-
-    popupWindow.classList.remove("popup-on");
-      $('#call-popup').click(function() {
-        popupWindow.classList.toggle("popup-on");
-        popupWindow.classList.remove("modal-error");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-        popupWindow.classList.remove("modal-error");
-        popupWindow.classList.remove("popup-on");
-          }
-        });
-
-    form.addEventListener("submit", function (evt) {
-
-    if (searchQuantityAdults.value <= 0 || searchQuantityChildren.value < 0 ) {
-        evt.preventDefault();
-	    popupWindow.classList.remove("modal-error");
-      popupWindow.offsetWidth = popupWindow.offsetWidth;
-      popupWindow.classList.add("modal-error");
-    }
-    });
-
-  </script>
-
+  <!-- календарь -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui-i18n.js"></script>
+    <!-- общий скрипт   -->
+  <script type="text/javascript" src="js/sedona.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="js/jquery-ui-themes-1.12.1/jquery-ui.css">
 
 </head>
 
@@ -179,80 +180,13 @@
       </div>
     </footer>
   </div>
+  <!-- календарь -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui-i18n.js"></script>
 
-  <script>
-        var link = document.querySelector(".up-arrow-js");
-        var sortUp = document.querySelector(".catalog-items");
-
-        var downLink = document.querySelector(".down-arrow-js");
-        var sortDown = document.querySelector(".catalog-items");
-
-        var arrowUp = document.querySelector(".up-arrow");
-        var arrowCur = document.querySelector(".current-arrow");
-
-        var arrowDown = document.querySelector(".down-arrow");
-
-        link.addEventListener("click", function(event) {
-          event.preventDefault();
-          sortUp.classList.add("catalog-items-js");
-          arrowUp.classList.add("current-arrow");
-          arrowDown.classList.remove("current-arrow");
-        });
-
-        downLink.addEventListener("click", function(event) {
-        event.preventDefault();
-        sortDown.classList.remove("catalog-items-js");
-        arrowUp.classList.remove("current-arrow");
-        arrowDown.classList.add("current-arrow");
-        });
-
-// активная сортировка шапки второй страницы
-
-        var byPrice = document.querySelector(".header-catalog-sorting li:nth-child(1)");
-        var byType = document.querySelector(".header-catalog-sorting li:nth-child(2)");
-        var byRating = document.querySelector(".header-catalog-sorting li:nth-child(3)");
-
-        byPrice.addEventListener("click", function(event) {
-          event.preventDefault();
-          byPrice.classList.add("current-sorting");
-          byType.classList.remove("current-sorting");
-          byRating.classList.remove("current-sorting");
-        });
-
-        byType.addEventListener("click", function(event) {
-          event.preventDefault();
-          byPrice.classList.remove("current-sorting");
-          byType.classList.add("current-sorting");
-          byRating.classList.remove("current-sorting");
-        });
-
-        byRating.addEventListener("click", function(event) {
-          event.preventDefault();
-          byPrice.classList.remove("current-sorting");
-          byType.classList.remove("current-sorting");
-          byRating.classList.add("current-sorting");
-        });
-
-//  тест ползунов
-      //   var div = document.getElementById('circle');
-      //
-      //   var listener = function(e) {
-      //   div.style.left = e.pageX - 980 + "px";
-      //
-      //   };
-      //
-      //   function move() {
-      //   document.addEventListener('mousemove', listener);
-      //   }
-      //
-      //   function stop() {
-      //   document.removeEventListener('mousemove', listener);
-      // }
-// тест ползунов
-
-  </script>
-
-
+  <!-- общий скрипт   -->
+  <script type="text/javascript" src="js/sedona.js"></script>
 </body>
 
 </html>
