@@ -127,20 +127,20 @@ if ( nameCurPage == hotelsPage) {  // если текущая страница �
             });
 } // закрывающая скобка иф-а отелей
 
-if ( nameCurPage == emptyPage) {
+  if ( nameCurPage == emptyPage) {  // фильтр на пустой странице
 
-$( function() {
-$( "#slider-range-empty" ).slider({
-range: true,
-min: 0,
-max: 3650,
-values: [ 0, 3000 ],
-slide: function( event, ui ) {
-$( "#amount" ).val( "ОТ  " + ui.values[ 0 ] + "           |              ДО  " + ui.values[ 1 ] );
-}
-});
-$( "#amount" ).val( "ОТ  " + $( "#slider-range-empty" ).slider( "values", 0 ) +
-"           |             ДО  " + $( "#slider-range-empty" ).slider( "values", 1 ) );
-} );
+    $( function() {
+    $( "#slider-range-empty" ).slider({
+    range: true,
+    min: 0,
+    max: 3650,
+    values: [ 0, 3000 ],
+    slide: function( event, ui ) {
+    $( "#amount" ).val( "ОТ  " + ui.values[ 0 ] + "           |              ДО  " + ui.values[ 1 ] );
+    }
+    });
+    $( "#amount" ).val( "ОТ  " + $( "#slider-range-empty" ).slider( "values", 0 ) +
+    "           |             ДО  " + $( "#slider-range-empty" ).slider( "values", 1 ) );
+    } );
 
 }
