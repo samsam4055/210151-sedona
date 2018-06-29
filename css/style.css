@@ -986,6 +986,43 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   border: none;
 }
 
+/* для пустой страницы */
+.price-controls-empty input {
+  width: 100%;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.price-controls-empty label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+text-align: center;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.price-controls-empty {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.min-price-empty {
+  width: 100%;
+
+}
+#amount {
+  text-align: center;
+}
+/* для пустой страницы */
+
 .range-controls {
   position: relative;
   margin-bottom: 32px;
