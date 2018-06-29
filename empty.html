@@ -9,10 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="js/jquery-ui-themes-1.12.1/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui-i18n.js"></script>
-
+  
 </head>
 
 <body>
@@ -115,26 +112,13 @@
       </div>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui-i18n.js"></script>
 
-  <script script type="text/javascript">
-        $( function() {
-        $( "#slider-range-empty" ).slider({
-        range: true,
-        min: 0,
-        max: 3650,
-        values: [ 0, 3000 ],
-        slide: function( event, ui ) {
-        $( "#amount" ).val( "ОТ  " + ui.values[ 0 ] + "           |              ДО  " + ui.values[ 1 ] );
-        }
-        });
-        $( "#amount" ).val( "ОТ  " + $( "#slider-range-empty" ).slider( "values", 0 ) +
-        "           |             ДО  " + $( "#slider-range-empty" ).slider( "values", 1 ) );
-        } );
-    </script>
   <!-- общий скрипт   -->
-  <!-- <script type="text/javascript" src="js/sedona.js"></script> -->
+  <script type="text/javascript" src="js/sedona.js"></script>
+
 </body>
-
-
 
 </html>

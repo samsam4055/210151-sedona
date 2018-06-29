@@ -2,6 +2,7 @@
 var mainPage = "index.html";
 
 var hotelsPage = "hotels.html"
+var emptyPage = "empty.html"
 
 var path = window.location.pathname;
 var nameCurPage = path.split("/").pop();
@@ -125,3 +126,21 @@ if ( nameCurPage == hotelsPage) {  // если текущая страница �
               byRating.classList.add("current-sorting");
             });
 } // закрывающая скобка иф-а отелей
+
+if ( nameCurPage == emptyPage) {
+
+$( function() {
+$( "#slider-range-empty" ).slider({
+range: true,
+min: 0,
+max: 3650,
+values: [ 0, 3000 ],
+slide: function( event, ui ) {
+$( "#amount" ).val( "ОТ  " + ui.values[ 0 ] + "           |              ДО  " + ui.values[ 1 ] );
+}
+});
+$( "#amount" ).val( "ОТ  " + $( "#slider-range-empty" ).slider( "values", 0 ) +
+"           |             ДО  " + $( "#slider-range-empty" ).slider( "values", 1 ) );
+} );
+
+}
