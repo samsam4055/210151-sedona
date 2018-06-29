@@ -74,7 +74,7 @@
      <div class="filter-range-title">Стоимость в сутки (р):</div>
      <div class="price-controls-empty">
        <label class="min-price-empty"> <input type="text" id="amount" name="price-empty" value="0"></label>
-       
+
      </div>
      <div class="range-controls">
       <div class="price-controls-empty" id="slider-range-empty"></div>
@@ -124,7 +124,7 @@
         max: 5000,
         values: [ 0, 3000 ],
         slide: function( event, ui ) {
-        $( "#amount" ).val( "  ОТ  " + ui.values[ 0 ] + "  - ДО  " + ui.values[ 1 ] );
+        $( "#amount" ).val( "  ОТ  " + ui.values[ 0 ] + "  -   ДО  " + ui.values[ 1 ] );
         }
         });
         $( "#amount" ).val( "ОТ  " + $( "#slider-range-empty" ).slider( "values", 0 ) +

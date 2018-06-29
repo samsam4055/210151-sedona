@@ -1021,6 +1021,39 @@ text-align: center;
 #amount {
   text-align: center;
 }
+
+#slider-range-empty > span:nth-child(2),
+#slider-range-empty > span:nth-child(3) {
+  position: absolute;
+  top: -9px;
+  width: 21px;
+  height: 21px;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  background: #ababab;
+}
+
+#slider-range-empty {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+}
+#slider-range-empty > .ui-slider-range {
+  background: rgb(255, 255, 255);
+}
+
+#slider-range-empty > span:nth-child(2):hover,
+#slider-range-empty > span:nth-child(3):hover {
+  top: -10px;
+  border: 9px solid #ffffff;
+  width: 23px;
+  height: 23px;
+}
+
+
 /* для пустой страницы */
 
 .range-controls {
