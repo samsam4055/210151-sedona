@@ -1,15 +1,17 @@
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
@@ -29,7 +31,7 @@ body {
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-          box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
@@ -47,7 +49,6 @@ body {
   min-height: 56px;
   padding-left: 0px;
   margin: 0px;
-
 }
 
 .main-navigation {
@@ -59,8 +60,8 @@ body {
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -81,31 +82,25 @@ body {
   font-size: 14px;
   line-height: 26px;
   color: rgb(0, 0, 0);
-
 }
 
 .site-navigation li:nth-child(3) {
   margin-left: 20%;
 }
 
-.site-navigation li:first-child,
-.site-navigation li:nth-child(2) {
+.site-navigation li:first-child, .site-navigation li:nth-child(2) {
   text-align: left;
   padding-left: 6%;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:last-child {
+.site-navigation li:nth-child(3), .site-navigation li:last-child {
   text-align: right;
   padding-right: 6%;
 }
 
-.site-navigation  a.current-page,
-.site-navigation  a.current-page:hover,
-.site-navigation  a.current-page:active {
-color: rgb(118, 99, 87);
+.site-navigation a.current-page, .site-navigation a.current-page:hover, .site-navigation a.current-page:active {
+  color: rgb(118, 99, 87);
 }
-
 
 .site-navigation a:hover {
   color: rgb(129, 179, 210);
@@ -123,7 +118,6 @@ color: rgb(118, 99, 87);
   background: url("../img/welcome-bottom.png") no-repeat, url("../img/sedona-welcome.jpg") no-repeat;
   background-size: 100% 57px, auto;
   background-position: center bottom, center 20%;
-  /* разобраться что означает эти 20% */
   text-align: center;
   padding-top: 75px;
   padding-bottom: 77px;
@@ -166,8 +160,8 @@ color: rgb(118, 99, 87);
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .features-blue {
@@ -179,8 +173,8 @@ color: rgb(118, 99, 87);
 
 .bridge {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   background: #81b3d1 url("../img/bridge.jpg") no-repeat;
   background-size: 66.66%;
   background-position: left center;
@@ -195,13 +189,11 @@ color: rgb(118, 99, 87);
   width: 33.333%;
   text-align: center;
   padding-top: 46px;
-
 }
 
 .features-blue>.features-item {
   background: #81b3d1;
 }
-
 
 .features-item h3 {
   font-size: 21px;
@@ -294,12 +286,11 @@ color: rgb(118, 99, 87);
   width: 100%;
   height: 593px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   overflow: hidden;
   background: url("../img/map.jpg") no-repeat;
   background-position: center;
-
 }
 
 .empty {
@@ -307,8 +298,8 @@ color: rgb(118, 99, 87);
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 260px;
   min-height: 700px;
   background: url("../img/sedona-welcome.jpg") no-repeat;
@@ -319,8 +310,8 @@ color: rgb(118, 99, 87);
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 260px;
   min-height: 700px;
   background: #81b3d1 url("../img/map.jpg") no-repeat;
@@ -339,8 +330,8 @@ color: rgb(118, 99, 87);
   min-height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
   text-align: center;
   margin-top: -120px;
   position: relative;
@@ -348,7 +339,6 @@ color: rgb(118, 99, 87);
 
 .hotels-pages {
   margin-top: 0px;
-  /* убираем отрицательный маргин футера на странице отелей */
 }
 
 .visit-sedona, .footer-social, .footer-copyright {
@@ -366,6 +356,7 @@ color: rgb(118, 99, 87);
 .footer-copyright {
   padding-top: 33px;
 }
+
 .academy {
   padding-top: 6px;
 }
@@ -380,10 +371,10 @@ color: rgb(118, 99, 87);
   display: flex;
   width: 150px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 0;
 }
@@ -410,22 +401,22 @@ color: rgb(118, 99, 87);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 46px;
   height: 48px;
 }
 
 .twitter::before {
-  background: url("../img/svg/twitter.svg") center  no-repeat;
+  background: url("../img/svg/twitter.svg") center no-repeat;
 }
 
 .fb-icon::before {
-  background: url("../img/svg/fb-icon.svg") center  no-repeat;
+  background: url("../img/svg/fb-icon.svg") center no-repeat;
 }
 
 .youtube::before {
-  background: url("../img/svg/youtube.svg") center  no-repeat;
+  background: url("../img/svg/youtube.svg") center no-repeat;
 }
 
 .social-button:active::before {
@@ -445,11 +436,11 @@ color: rgb(118, 99, 87);
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0, 0, 0);
@@ -490,15 +481,10 @@ color: rgb(118, 99, 87);
   position: relative;
 }
 
-/* #popup-window {
-  display: none;
-} */
-
 .popup-window {
   position: absolute;
   top: 0px;
   left: calc(50% - 284px);
-  /* transform: translateX(-50%); */
   width: 568px;
   min-height: 395px;
   font-size: 14px;
@@ -542,7 +528,7 @@ color: rgb(118, 99, 87);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
- }
+}
 
 @keyframes swing {
   15% {
@@ -569,41 +555,49 @@ color: rgb(118, 99, 87);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
- }
+}
 
- .modal-error {
-	 animation: shake 0.6s;
- }
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
+}
 
- @keyframes shake {
-  0%,
-  100% {
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
-
-  20%,
-  40%,
-  60%,
-  80% {
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
 
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
 
 .search-form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 55px;
   padding-top: 55px;
 }
@@ -613,8 +607,7 @@ color: rgb(118, 99, 87);
   width: 108px;
 }
 
-div.search-item:nth-child(4) > label:nth-child(1) {
-  /* display: inline-block; */
+div.search-item:nth-child(4)>label:nth-child(1) {
   width: 63px;
 }
 
@@ -623,20 +616,19 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   padding-bottom: 29px;
   font-size: 14px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-#search-date-arrival  {
+#search-date-arrival {
   background-color: #f1f1f1;
   border: none;
   width: 346px;
   height: 38px;
-  /* margin-left: 20px; */
   padding-left: 13px;
   font-size: 14px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -646,27 +638,24 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   border: none;
   width: 346px;
   height: 38px;
-  /* margin-left: 18px; */
   padding-left: 13px;
   font-size: 14px;
   line-height: 26px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
 }
 
-#search-quantity-adults  {
-   background-color: #f1f1f1;
-    width: 114px;
-    height: 38px;
-    border: none;
-    /* margin-left: 38px; */
-    /* padding-left: 46px; */
-    font-size: 14px;
-    color: rgb(0,0,0);
-    font-weight: bold;
-    text-align: center;
-    padding-top: 2px;
+#search-quantity-adults {
+  background-color: #f1f1f1;
+  width: 114px;
+  height: 38px;
+  border: none;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2px;
 }
 
 #search-quantity-children {
@@ -674,10 +663,8 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   width: 114px;
   height: 38px;
   border: none;
-  /* margin-left: 24px; */
-  /* padding-left: 46px; */
   font-size: 14px;
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
   padding-top: 2px;
@@ -694,7 +681,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   background-color: #f1f1f1;
   font-size: 21px;
   line-height: 21px;
-  color:#c9c9c9;
+  color: #c9c9c9;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -818,8 +805,6 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   min-width: 237px;
 }
 
-
-
 .type-of-housing {
   padding: 0;
   margin: 0;
@@ -843,7 +828,6 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   display: flex;
   width: 100%;
   list-style-type: none;
-
 }
 
 .filters li {
@@ -879,12 +863,12 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   display: block;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -893,9 +877,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   background: url("../img/svg/checkbox-off.svg") no-repeat;
 }
 
-
-
-.filter-input-checkbox:checked + label::before {
+.filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -903,34 +885,23 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
 
-.filter-input-checkbox:disabled + label::before {
+.filter-input-checkbox:disabled+label::before {
   background: url("../img/svg/checkbox-off.svg") no-repeat;
   opacity: 0.3;
 }
 
-.filter-input-checkbox:disabled:checked + label::before {
+.filter-input-checkbox:disabled:checked+label::before {
   background: url("../img/svg/checkbox-on.svg") no-repeat;
   opacity: 0.3;
 }
 
-/* .filter-input-checkbox:focus + label::before {
-  border: 1px solid #5495bd;
-  padding: 0;
-}   рамка меняет размер элемента при фокусе   */
-
-
-
-/* фильтр ползунок */
-
 .filter-range {
   width: 56.3%;
   min-width: 219px;
-  /* margin-top: 27px; */
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
   padding: 0;
-
 }
 
 .filter-range-title {
@@ -958,15 +929,14 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   height: 22px;
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
-
   padding-top: 6px;
   cursor: pointer;
 }
@@ -986,7 +956,8 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   border: none;
 }
 
-/* для пустой страницы */
+/* для пустой страницы -->*/
+
 .price-controls-empty input {
   width: 100%;
   margin: 0;
@@ -1000,7 +971,7 @@ div.search-item:nth-child(4) > label:nth-child(1) {
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
-text-align: center;
+  text-align: center;
   padding-top: 6px;
   cursor: pointer;
 }
@@ -1016,16 +987,16 @@ text-align: center;
 
 .min-price-empty {
   width: 100%;
-
 }
+
 #amount {
   text-align: center;
   font-size: 14px;
   line-height: 21px;
+  width: 86%;
 }
 
-#slider-range-empty > span:nth-child(2),
-#slider-range-empty > span:nth-child(3) {
+#slider-range-empty>span:nth-child(2), #slider-range-empty>span:nth-child(3) {
   position: absolute;
   top: -9px;
   width: 21px;
@@ -1033,33 +1004,31 @@ text-align: center;
   border: 9px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
   background: #ababab;
 }
 
 #slider-range-empty {
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    left: 10px;
-    width: calc(100% - 10px);
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  left: 10px;
+  width: calc(100% - 10px);
 }
 
-#slider-range-empty > .ui-slider-range {
+#slider-range-empty>.ui-slider-range {
   background: rgb(255, 255, 255);
 }
 
-#slider-range-empty > span:nth-child(2):hover,
-#slider-range-empty > span:nth-child(3):hover {
+#slider-range-empty>span:nth-child(2):hover, #slider-range-empty>span:nth-child(3):hover {
   top: -10px;
   border: 9px solid #ffffff;
   width: 23px;
   height: 23px;
 }
 
-
-/* для пустой страницы */
+/* <--для пустой страницы */
 
 .range-controls {
   position: relative;
@@ -1085,7 +1054,7 @@ text-align: center;
   border: 9px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
   background: #ababab;
 }
@@ -1108,12 +1077,9 @@ text-align: center;
 .btn-transparent {
   display: block;
   position: relative;
-  /* margin-left: 26.66%;  если ровнять так, не сходится на минимальной ширине */
-  margin-left: calc(50% - 73px);  /* а так не сходится на ширине 1200 */
+  margin-left: calc(50% - 73px);
   width: 136px;
   height: 36px;
-
-  /* padding: 6px 34px; */
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -1143,9 +1109,9 @@ text-align: center;
   line-height: 26px;
   font-weight: bold;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  }
+  -ms-grid-row-align: center;
+  align-self: center;
+}
 
 .catalog-header p {
   padding-top: 5px;
@@ -1178,16 +1144,16 @@ text-align: center;
 .catalog-header li {
   padding-right: 33px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .catalog-header p {
   padding-right: 40px;
   padding-left: 48px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .catalog-sorting a:hover {
@@ -1237,7 +1203,7 @@ text-align: center;
   display: -ms-flexbox;
   display: flex;
   border: solid transparent;
-  border-top-color:  #c9c9c9;
+  border-top-color: #c9c9c9;
   border-bottom: 0;
   border-top-width: 10px;
   border-right-width: 6px;
@@ -1270,14 +1236,23 @@ text-align: center;
   /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column; */
-          flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .catalog-items-js {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
 .catalog-items-js-down {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1286,8 +1261,8 @@ text-align: center;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 151px;
   border-bottom: solid #e5e5e5 1px;
   padding-left: 6%;
@@ -1324,7 +1299,6 @@ text-align: center;
 
 .rating-desert {
   width: 66px;
-
 }
 
 .rating-villas-poco {
@@ -1337,7 +1311,7 @@ text-align: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .catalog-description h3 {
@@ -1350,16 +1324,15 @@ text-align: center;
   margin-bottom: 10px;
 }
 
-.catalog-description h3 a {
-  /* сложный селектор более 2-х, ошибка? */
+.catalog-description  a  {
   color: rgb(0, 0, 0);
 }
 
-.catalog-description h3 a:hover {
+.catalog-description a:hover {
   color: rgb(129, 179, 210);
 }
 
-.catalog-description h3 a:active {
+.catalog-description a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1369,8 +1342,8 @@ text-align: center;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 116px;
 }
 
@@ -1381,7 +1354,7 @@ text-align: center;
   margin-bottom: 12px;
 }
 
-.more-info {
+.more-info  {
   font-size: 14px;
   line-height: 21px;
   color: rgb(255, 255, 255);
@@ -1394,12 +1367,20 @@ text-align: center;
   padding-top: 3px;
 }
 
+ a.more-info, a.more-info:hover {
+  color: rgb(255, 255, 255);
+}
+
 .more-info:hover {
   background-color: #669dc0;
 }
 
 .more-info:active {
   background-color: #5495bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+a.more-info:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1420,7 +1401,15 @@ text-align: center;
   background-color: #604e43;
 }
 
+a.book-it, a.book-it:hover {
+  color: rgb(255, 255, 255);
+}
+
 .book-it:active {
   background-color: #503d32;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+a.book-it:active {
   color: rgba(255, 255, 255, 0.3);
 }

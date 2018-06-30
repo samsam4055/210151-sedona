@@ -89,42 +89,42 @@ if ( nameCurPage == hotelsPage) {  // если текущая страница �
 
     // страница отелей
 
-            link.addEventListener("click", function(event) {
-              event.preventDefault();
-              sortUp.classList.add("catalog-items-js");
-              arrowUp.classList.add("current-arrow");
-              arrowDown.classList.remove("current-arrow");
-            });
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        sortUp.classList.add("catalog-items-js");
+        arrowUp.classList.add("current-arrow");
+        arrowDown.classList.remove("current-arrow");
+      });
 
-            downLink.addEventListener("click", function(event) {
-            event.preventDefault();
-            sortDown.classList.remove("catalog-items-js");
-            arrowUp.classList.remove("current-arrow");
-            arrowDown.classList.add("current-arrow");
-            });
+      downLink.addEventListener("click", function(event) {
+      event.preventDefault();
+      sortDown.classList.remove("catalog-items-js");
+      arrowUp.classList.remove("current-arrow");
+      arrowDown.classList.add("current-arrow");
+      });
 
     // активная сортировка шапки второй страницы
 
-            byPrice.addEventListener("click", function(event) {
-              event.preventDefault();
-              byPrice.classList.add("current-sorting");
-              byType.classList.remove("current-sorting");
-              byRating.classList.remove("current-sorting");
-            });
+      byPrice.addEventListener("click", function(event) {
+        event.preventDefault();
+        byPrice.classList.add("current-sorting");
+        byType.classList.remove("current-sorting");
+        byRating.classList.remove("current-sorting");
+      });
 
-            byType.addEventListener("click", function(event) {
-              event.preventDefault();
-              byPrice.classList.remove("current-sorting");
-              byType.classList.add("current-sorting");
-              byRating.classList.remove("current-sorting");
-            });
+      byType.addEventListener("click", function(event) {
+        event.preventDefault();
+        byPrice.classList.remove("current-sorting");
+        byType.classList.add("current-sorting");
+        byRating.classList.remove("current-sorting");
+      });
 
-            byRating.addEventListener("click", function(event) {
-              event.preventDefault();
-              byPrice.classList.remove("current-sorting");
-              byType.classList.remove("current-sorting");
-              byRating.classList.add("current-sorting");
-            });
+      byRating.addEventListener("click", function(event) {
+        event.preventDefault();
+        byPrice.classList.remove("current-sorting");
+        byType.classList.remove("current-sorting");
+        byRating.classList.add("current-sorting");
+      });
 } // закрывающая скобка иф-а отелей
 
   if ( nameCurPage == emptyPage) {  // фильтр на пустой странице
@@ -136,11 +136,11 @@ if ( nameCurPage == hotelsPage) {  // если текущая страница �
     max: 3650,
     values: [ 0, 3000 ],
     slide: function( event, ui ) {
-    $( "#amount" ).val( "ОТ  " + ui.values[ 0 ] + "           |              ДО  " + ui.values[ 1 ] );
+    $( "#amount" ).val( "ОТ   " + ui.values[ 0 ] + "         |         ДО " + ui.values[ 1 ] );
     }
     });
-    $( "#amount" ).val( "ОТ  " + $( "#slider-range-empty" ).slider( "values", 0 ) +
-    "           |             ДО  " + $( "#slider-range-empty" ).slider( "values", 1 ) );
+    $( "#amount" ).val( "ОТ   " + $( "#slider-range-empty" ).slider( "values", 0 ) +
+    "         |        ДО " + $( "#slider-range-empty" ).slider( "values", 1 ) );
     } );
 
 }
