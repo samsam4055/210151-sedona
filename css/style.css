@@ -331,7 +331,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: start;
+  align-items: flex-start;
   text-align: center;
   margin-top: -120px;
   position: relative;
@@ -1367,7 +1367,7 @@ div.search-item:nth-child(4)>label:nth-child(1) {
   padding-top: 3px;
 }
 
- a.more-info, a.more-info:hover {
+a.more-info, a.more-info:hover {
   color: rgb(255, 255, 255);
 }
 
