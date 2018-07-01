@@ -335,6 +335,7 @@ body {
   text-align: center;
   margin-top: -120px;
   position: relative;
+  z-index: 2;
 }
 
 .hotels-pages {
@@ -620,7 +621,7 @@ div.search-item:nth-child(4)>label:nth-child(1) {
   font-weight: bold;
 }
 
-#search-date-arrival {
+.search-item input {
   background-color: #f1f1f1;
   border: none;
   width: 346px;
@@ -633,41 +634,24 @@ div.search-item:nth-child(4)>label:nth-child(1) {
   text-transform: uppercase;
 }
 
-#search-date-departure {
-  background-color: #f1f1f1;
-  border: none;
-  width: 346px;
-  height: 38px;
-  padding-left: 13px;
-  font-size: 14px;
-  line-height: 26px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
+.search-item input:hover {
+  background-color: #ebebeb;
 }
 
-#search-quantity-adults {
-  background-color: #f1f1f1;
-  width: 114px;
-  height: 38px;
-  border: none;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-align: center;
-  padding-top: 2px;
+.search-item input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
-#search-quantity-children {
-  background-color: #f1f1f1;
+div.search-item:nth-child(3) > input:nth-child(3), div.search-item:nth-child(4) > input:nth-child(3),
+div.search-item:nth-child(3) > input:nth-child(3):hover, div.search-item:nth-child(4) > input:nth-child(3):hover,
+div.search-item:nth-child(3) > input:nth-child(3):active, div.search-item:nth-child(4) > input:nth-child(3):active {
   width: 114px;
-  height: 38px;
-  border: none;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
   text-align: center;
   padding-top: 2px;
+  padding-left: 0;
+  background-color: #f1f1f1;
+  border: none;
 }
 
 .search-children {
@@ -689,7 +673,6 @@ div.search-item:nth-child(4)>label:nth-child(1) {
   padding: 0;
   top: 0;
   cursor: pointer;
-  
 }
 
 .btn-adults-minus {
@@ -779,12 +762,14 @@ div.search-item:nth-child(4)>label:nth-child(1) {
 .search-btn:hover {
   background-color: #669dc0;
   padding: 0;
+  
 }
 
 .search-btn:active {
   background-color: #5495bd;
   color: rgba(255, 255, 255, 0.3);
   padding: 0;
+  
 }
 
 /* страничка гостинницы */
@@ -954,11 +939,13 @@ div.search-item:nth-child(4)>label:nth-child(1) {
 .price-controls input {
   width: 50px;
   margin: 0;
-  color: inherit;
-  font: inherit;
   background: none;
   border: none;
   padding: 0;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0;
+  color: rgb(255, 255, 255);
 }
 
 .price-controls input:active {
