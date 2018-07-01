@@ -689,6 +689,7 @@ div.search-item:nth-child(4)>label:nth-child(1) {
   padding: 0;
   top: 0;
   cursor: pointer;
+  
 }
 
 .btn-adults-minus {
@@ -713,6 +714,7 @@ div.search-item:nth-child(4)>label:nth-child(1) {
 
 .search-calendar-btn:active {
   fill: #81b3d1;
+  padding: 0;
 }
 
 .search-calendar-btn {
@@ -776,11 +778,13 @@ div.search-item:nth-child(4)>label:nth-child(1) {
 
 .search-btn:hover {
   background-color: #669dc0;
+  padding: 0;
 }
 
 .search-btn:active {
   background-color: #5495bd;
   color: rgba(255, 255, 255, 0.3);
+  padding: 0;
 }
 
 /* страничка гостинницы */
@@ -954,8 +958,12 @@ div.search-item:nth-child(4)>label:nth-child(1) {
   font: inherit;
   background: none;
   border: none;
+  padding: 0;
 }
 
+.price-controls input:active {
+	padding: 0;
+}
 /* для пустой страницы -->*/
 
 .price-controls-empty input {
