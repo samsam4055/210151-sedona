@@ -790,25 +790,28 @@ div.search-item:nth-child(3) > input:nth-child(3):active, div.search-item:nth-ch
 .infrastructure {
   padding: 0;
   margin: 0;
+  margin-right: 5%;
   border: none;
-  min-width: 237px;
+  min-width: 204px;
 }
 
 .type-of-housing {
   padding: 0;
-  margin: 0;
+  margin-right: auto;
   border: none;
-  width: 237px;
+  min-width: 204px;
   margin-left: auto;
 }
 
 .cost-per-day {
-  width: 53.4%;
+  width: 100%;
+  min-width: 220px;
   display: block;
   position: relative;
   border: none;
   padding: 0;
   margin: 0;
+  margin-left: auto;
 }
 
 .filter-form {
@@ -885,8 +888,8 @@ div.search-item:nth-child(3) > input:nth-child(3):active, div.search-item:nth-ch
 }
 
 .filter-range {
-  width: 56.3%;
-  min-width: 219px;
+  width: 53.3%;
+  min-width: 220px;
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
