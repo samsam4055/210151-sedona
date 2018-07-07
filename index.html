@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="js/jquery-ui-themes-1.12.1/jquery-ui.css">
@@ -108,15 +108,15 @@
                 <label for="search-quantity-adults">Взрослые:</label>
                 <button class="quantity-btn btn-adults-minus" type="button" onclick="document.getElementById('search-quantity-adults').value=parseInt(document.getElementById('search-quantity-adults').value)-1">–
                 </button>
-                <input id="search-quantity-adults" type="text"  readonly name="quantity-adults" value="2">
+                <input class="quantity-input" id="search-quantity-adults" type="text"  readonly name="quantity-adults" value="2">
                 <button class="quantity-btn btn-adults-plus" type="button" onclick="document.getElementById('search-quantity-adults').value=parseInt(document.getElementById('search-quantity-adults').value)+1">+
                 </button>
               </div>
               <div class="search-item search-children">
-                <label for="search-quantity-children">Дети:</label>
+                <label class="quantity-children-label" for="search-quantity-children">Дети:</label>
                 <button class="quantity-btn btn-children-minus" type="button" onclick="document.getElementById('search-quantity-children').value=parseInt(document.getElementById('search-quantity-children').value)-1">–
                 </button>
-                <input id="search-quantity-children" type="text"  readonly name="quantity-children" value="0">
+                <input class="quantity-input" id="search-quantity-children" type="text"  readonly name="quantity-children" value="0">
                 <button class="quantity-btn btn-children-plus" type="button" onclick="document.getElementById('search-quantity-children').value=parseInt(document.getElementById('search-quantity-children').value)+1">+
                 </button>
               </div>
