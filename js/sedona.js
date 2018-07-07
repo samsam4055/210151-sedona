@@ -6,7 +6,7 @@ var emptyPage = "empty.html"
 var path = window.location.pathname;
 var nameCurPage = path.split("/").pop();
 
-if (nameCurPage == mainPage) { // если текущая страница основная - выполняется код ниже
+if (nameCurPage == mainPage) {
 
   // попап
   var form = document.querySelector(".search-form");
@@ -65,9 +65,9 @@ if (nameCurPage == mainPage) { // если текущая страница ос�
       popupWindow.classList.add("modal-error");
     }
   });
-} // закрывается иф певой страницы
+}
 
-if (nameCurPage == hotelsPage) { // если текущая страница отели - выполняется код ниже
+if (nameCurPage == hotelsPage) {
 
   // отели
   var link = document.querySelector(".up-arrow-js");
@@ -124,9 +124,9 @@ if (nameCurPage == hotelsPage) { // если текущая страница о�
     byType.classList.remove("current-sorting");
     byRating.classList.add("current-sorting");
   });
-} // закрывающая скобка иф-а отелей
+}
 
-if (nameCurPage == emptyPage) { // фильтр на пустой странице
+if (nameCurPage == emptyPage) {
 
   $(function() {
     $("#slider-range-empty").slider({
@@ -141,5 +141,4 @@ if (nameCurPage == emptyPage) { // фильтр на пустой страниц
     $("#amount").val("ОТ   " + $("#slider-range-empty").slider("values", 0) +
       "         |        ДО " + $("#slider-range-empty").slider("values", 1));
   });
-
 }
