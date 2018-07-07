@@ -633,12 +633,13 @@ label.quantity-children-label {
   border: none;
   width: 346px;
   height: 38px;
-  padding-left: 13px;
+  padding-left: 11px;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
+  border: 2px solid #f1f1f1;
 }
 
 .search-item input:hover {
@@ -655,8 +656,9 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   text-align: center;
   padding-top: 2px;
   padding-left: 0;
-  background-color: #f1f1f1;
   border: none;
+  border-top: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
 }
 
 .search-children {
@@ -681,7 +683,7 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
 }
 
 .btn-adults-minus {
-  left: 114px;
+  left: 112px;
 }
 
 .btn-adults-plus {
