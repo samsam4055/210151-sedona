@@ -1243,9 +1243,6 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1277,6 +1274,8 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   border-bottom: solid #e5e5e5 1px;
   padding-left: 6%;
   padding-right: 6%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .rating {
