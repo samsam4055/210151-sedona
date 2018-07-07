@@ -890,6 +890,10 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   opacity: 0.3;
 }
 
+.filter-input-checkbox:focus+label::before {
+  outline: 1px solid silver;
+}
+
 .filter-range {
   width: 53.3%;
   min-width: 220px;
@@ -1268,7 +1272,6 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   border-bottom: solid #e5e5e5 1px;
   padding-left: 6%;
   padding-right: 6%;
-  
 }
 
 .rating {
