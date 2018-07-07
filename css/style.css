@@ -612,6 +612,7 @@ body {
 
 .search-form label {
   display: inline-block;
+  vertical-align: baseline;
   width: 108px;
 }
 
@@ -936,6 +937,7 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
 
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 21px;
   padding-top: 6px;
@@ -975,6 +977,7 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
 
 .price-controls-empty label {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -1370,6 +1373,7 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   width: 110px;
   height: 27px;
   display: inline-block;
+  vertical-align: baseline;
   text-align: center;
   padding-top: 3px;
 }
@@ -1400,6 +1404,7 @@ a.more-info:active {
   width: 142px;
   height: 27px;
   display: inline-block;
+  vertical-align: baseline;
   text-align: center;
   padding-top: 3px;
 }
