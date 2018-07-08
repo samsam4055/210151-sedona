@@ -44,6 +44,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
   min-height: 56px;
@@ -82,18 +83,19 @@ body {
   font-size: 14px;
   line-height: 26px;
   color: rgb(0, 0, 0);
+  overflow-wrap: break-word;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(4n+3) {
   margin-left: 20%;
 }
 
-.site-navigation li:first-child, .site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(4n+1), .site-navigation li:nth-child(4n+2) {
   text-align: left;
   padding-left: 6%;
 }
 
-.site-navigation li:nth-child(3), .site-navigation li:last-child {
+.site-navigation li:nth-child(4n+3), .site-navigation li:nth-child(4n+4) {
   text-align: right;
   padding-right: 6%;
 }
@@ -134,6 +136,7 @@ body {
   min-height: 216px;
   padding-top: 40px;
   padding-bottom: 35px;
+  overflow-wrap: break-word;
 }
 
 .welcome-txt p {
@@ -191,6 +194,7 @@ body {
   width: 33.333%;
   text-align: center;
   padding-top: 46px;
+  overflow-wrap: break-word;
 }
 
 .features-blue>.features-item {
@@ -222,8 +226,8 @@ body {
 }
 
 .features-gray p {
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 
 .few-tourists p {
@@ -267,6 +271,7 @@ body {
   padding-top: 51px;
   padding-left: 10%;
   padding-right: 10%;
+  overflow-wrap: break-word;
 }
 
 .request {
@@ -331,6 +336,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   min-height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-align: start;
@@ -351,14 +357,18 @@ body {
 }
 
 .visit-sedona {
+  padding: 20px;
   padding-top: 46px;
+  overflow-wrap: break-word;
 }
 
 .footer-social {
+  padding: 10px;
   padding-top: 36px;
 }
 
 .footer-copyright {
+  padding: 10px;
   padding-top: 33px;
 }
 
@@ -608,6 +618,7 @@ body {
   flex-wrap: wrap;
   padding-left: 55px;
   padding-top: 55px;
+  overflow-wrap: break-word;
 }
 
 .search-form label {
@@ -775,7 +786,6 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   background-color: #5495bd;
   color: rgba(255, 255, 255, 0.3);
   padding: 0;
-
 }
 
 /* страничка гостинницы */
@@ -962,8 +972,9 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
 }
 
 .price-controls input:active {
-	padding: 0;
+  padding: 0;
 }
+
 /* для пустой страницы -->*/
 
 .price-controls-empty input {
@@ -1149,6 +1160,8 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding-left: 0px;
+  flex-wrap: wrap;
+  max-width: 53%;
 }
 
 .catalog-header li {
@@ -1333,7 +1346,7 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   margin-bottom: 10px;
 }
 
-.catalog-description  a  {
+.catalog-description a {
   color: rgb(0, 0, 0);
 }
 
@@ -1353,7 +1366,11 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 116px;
+  min-width: 116px;
+  overflow-wrap: break-word;
+  padding-right: 6px;
+  max-width: 200px;
+  align-self: flex-end;
 }
 
 .catalog-description span {
@@ -1363,18 +1380,18 @@ input.quantity-input, input.quantity-input:hover, input.quantity-input:active, i
   margin-bottom: 12px;
 }
 
-.more-info  {
+.more-info {
   font-size: 14px;
   line-height: 21px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: #81b3d2;
-  width: 110px;
+  min-width: 110px;
   height: 27px;
   display: inline-block;
   vertical-align: baseline;
   text-align: center;
-  padding-top: 3px;
+  padding: 3px;
 }
 
 a.more-info, a.more-info:hover {
@@ -1400,12 +1417,12 @@ a.more-info:active {
   color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: #756357;
-  width: 142px;
+  min-width: 142px;
   height: 27px;
   display: inline-block;
   vertical-align: baseline;
   text-align: center;
-  padding-top: 3px;
+  padding: 3px;
 }
 
 .book-it:hover {
